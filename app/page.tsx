@@ -14,12 +14,12 @@ const projects = [
 ];
 
 const strengths = [
-  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-v7.png', back:'/assets/strength-01-back-v7.png' },
-  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-v7.png', back:'/assets/strength-02-back-v7.png' },
-  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-v7.png', back:'/assets/strength-03-back-v7.png' },
-  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-v7.png', back:'/assets/strength-04-back-v7.png' },
-  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/strength-05-front-v7.png', back:'/assets/strength-05-back-v7.png' },
-  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/strength-06-front-v7.png', back:'/assets/strength-06-back-v7.png' },
+  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-v8.png', back:'/assets/strength-01-back-v8.png' },
+  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-v8.png', back:'/assets/strength-02-back-v8.png' },
+  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-v8.png', back:'/assets/strength-03-back-v8.png' },
+  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-v8.png', back:'/assets/strength-04-back-v8.png' },
+  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/strength-05-front-v8.png', back:'/assets/strength-05-back-v8.png' },
+  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/strength-06-front-v8.png', back:'/assets/strength-06-back-v8.png' },
 ];
 
 export default function Home() {
@@ -137,7 +137,7 @@ export default function Home() {
             <p className="kicker">HIGHLY EXPERIENCED SENIOR DESIGNER</p>
             <h2>在审美、秩序与商业目标之间，<br />创造真正<span>有效</span>的视觉体验。</h2>
             <p className="bio">我是一名拥有 14 年经验的高级视觉 / UI 设计师。长期负责企业学习平台、金融产品与品牌运营的全渠道视觉设计，既能独立从 0 到 1 搭建产品与品牌体系，也能带领团队稳定交付高质量设计。</p>
-            <div className="contact-row"><a href="tel:13620215425"><Phone size={15}/> 136 2021 5425</a><a href="mailto:215292285@qq.com"><Mail size={15}/> 215292285@qq.com</a><span>BASED IN SHENZHEN</span></div>
+            <div className="contact-row"><a href="tel:13620215425"><Phone size={15}/> 136 2021 5425</a><a href="mailto:215292285@qq.com"><Mail size={15}/> 215292285@qq.com</a><span className="about-location"><MapPin size={15}/> BASED IN SHENZHEN</span></div>
           </div>
         </div>
       </section>
@@ -167,13 +167,13 @@ export default function Home() {
           </div>
           <div className="footer-bottom"><span>© 2026 ZIJIANG ZHAO</span><span>VISUAL / UI / AI / BRAND DESIGNER</span><a href="#home">BACK TO TOP ↑</a></div>
         </div>
-        <div className="footer-marquee" aria-label="Thanks for watching">
-          <div className="footer-marquee-track">
-            <span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span>
-            <span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span>
-          </div>
-        </div>
       </footer>
+      <div className="footer-marquee" aria-label="Thanks for watching">
+        <div className="footer-marquee-track">
+          <span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span>
+          <span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span>
+        </div>
+      </div>
       <a className="back-to-top" href="#home" aria-label="返回顶部"><ArrowUp size={21} /></a>
     </main>
   );
