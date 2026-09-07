@@ -26,7 +26,7 @@ export default function PortfolioMotion() {
         },
       });
 
-      gsap.set('.hero-title span', { yPercent: 125, scaleX: 0.66, clipPath: 'inset(0 0 100% 0)', transformOrigin: '50% 100%' });
+      gsap.set('.hero-title img', { yPercent: 125, scaleX: 0.66, clipPath: 'inset(0 0 100% 0)', transformOrigin: '50% 100%' });
       gsap.set('.hero-character', { xPercent: 12, scale: 1.1, clipPath: 'inset(0 0 0 42%)' });
       gsap.set(['.nav', '.hero-tag', '.hero-scroll', '.hero-signature'], { autoAlpha: 0, y: 28 });
 
@@ -35,13 +35,13 @@ export default function PortfolioMotion() {
         .to('.opening-screen__bar', { scaleX: 1, duration: 1.15, ease: 'power4.inOut' }, 0.22)
         .to('.opening-screen__identity', { yPercent: -130, duration: 0.8, ease: 'power4.in' }, 1.25)
         .to('.opening-screen', { clipPath: 'inset(0 0 100% 0)', duration: 1.05, ease: 'power4.inOut' }, 1.42)
-        .to('.hero-title span', {
+        .to('.hero-title img', {
           yPercent: 0,
           scaleX: 1,
           clipPath: 'inset(-12% -2% -14% -2%)',
           duration: 1.45,
           stagger: 0.14,
-          onComplete: () => gsap.set('.hero-title span', { clearProps: 'clipPath,transform' }),
+          onComplete: () => gsap.set('.hero-title img', { clearProps: 'clipPath,transform' }),
         }, 1.62)
         .to('.hero-character', { xPercent: 0, scale: 1, clipPath: 'inset(0 0 0 0%)', duration: 1.55 }, 1.82)
         .to('.nav', { autoAlpha: 1, y: 0, duration: 1.05 }, 2.05)

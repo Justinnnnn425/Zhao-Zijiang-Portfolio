@@ -683,6 +683,65 @@
   }
 }
 
+/* Hero artwork and final micro-adjustments. */
+.hero-title {
+  display: block !important;
+  width: min(94vw, 1800px) !important;
+  padding-top: clamp(72px, 9vh, 120px) !important;
+}
+
+.hero-title img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(0,0,0,.32));
+}
+
+.strength-flipper,
+.strength-visual .strength-front,
+.strength-visual .strength-back {
+  border-radius: 999px;
+  clip-path: inset(3px round 999px);
+}
+
+.strength-grid article:hover .strength-flipper,
+.strength-grid article:focus-within .strength-flipper {
+  transform: scale(1.15) rotateY(180deg);
+}
+
+.services-cards .service-card h2 {
+  padding-top: 12px !important;
+}
+
+.contact-details a,
+.contact-details > div {
+  gap: 20px !important;
+  font-size: clamp(16px, 1.35vw, 24px) !important;
+}
+
+.contact-details i {
+  flex-basis: 50px !important;
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.contact-details i svg {
+  width: 21px;
+  height: 21px;
+}
+
+@media (max-width: 650px) {
+  .hero-title {
+    width: calc(100% - 28px) !important;
+    padding-top: 110px !important;
+  }
+
+  .services-cards .service-card h2 {
+    padding-top: 10px !important;
+  }
+}
+
 /* 2026-09-07 interaction and alignment pass */
 .section-head .module-heading-main,
 .experience-heading.section-head .module-heading-main,
@@ -1928,3 +1987,18 @@
   .services-cards .service-card p { margin-bottom: 44px !important; }
   .contact-details { transform: none; }
 }
+
+/* Absolute final artwork adjustments. */
+.hero-title { display:block !important; width:min(94vw,1800px) !important; padding-top:clamp(72px,9vh,120px) !important; }
+.hero-title img { display:block; width:100%; height:auto; object-fit:contain; filter:drop-shadow(0 14px 28px rgba(0,0,0,.32)); }
+.strength-flipper,
+.strength-visual .strength-front,
+.strength-visual .strength-back { border-radius:999px; clip-path:inset(3px round 999px); }
+.strength-grid article:hover .strength-flipper,
+.strength-grid article:focus-within .strength-flipper { transform:scale(1.15) rotateY(180deg); }
+.services-cards .service-card h2 { padding-top:12px !important; }
+.contact-details a,
+.contact-details > div { gap:20px !important; font-size:clamp(16px,1.35vw,24px) !important; }
+.contact-details i { flex-basis:50px !important; width:50px !important; height:50px !important; }
+.contact-details i svg { width:21px; height:21px; }
+@media(max-width:650px){.hero-title{width:calc(100% - 28px)!important;padding-top:110px!important}.services-cards .service-card h2{padding-top:10px!important}}

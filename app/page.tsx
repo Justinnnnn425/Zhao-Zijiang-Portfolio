@@ -32,7 +32,7 @@ export default function Home() {
           <a className="brand" href="#home"><img src="/assets/zhaozijiang-logo.png" alt="赵兹江个人标志" /></a>
           <div className="nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">LET’S CONNECT</a></div>
         </nav>
-        <div className="hero-title shell" aria-label="Creative Portfolio"><span>CREATIVE</span><span>PORTFOLIO</span></div>
+        <div className="hero-title shell"><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
         <img className="hero-character" src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" />
         <div className="hero-tag"><strong>ZhaoZijiang</strong><span>赵兹江 Portfolio VISUAL / UI</span></div>
         <a className="hero-scroll" href="#experience"><ArrowDown size={22}/> Scroll to view my work</a>
