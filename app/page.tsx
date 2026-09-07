@@ -13,12 +13,12 @@ const projects = [
 ];
 
 const strengths = [
-  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-new.png', back:'/assets/strength-01-back-new.png' },
-  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-new.png', back:'/assets/strength-02-back-new.png' },
-  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-new.png', back:'/assets/strength-03-back-new.png' },
-  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-new.png', back:'/assets/strength-04-back-new.png' },
-  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/strength-05-front-new.png', back:'/assets/strength-05-back-new.png' },
-  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/strength-06-front-new.png', back:'/assets/strength-06-back-new.png' },
+  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-final.png', back:'/assets/strength-01-back-final.png' },
+  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-final.png', back:'/assets/strength-02-back-final.png' },
+  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-final.png', back:'/assets/strength-03-back-final.png' },
+  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-final.png', back:'/assets/strength-04-back-final.png' },
+  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/strength-05-front-final.png', back:'/assets/strength-05-back-final.png' },
+  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/strength-06-front-final.png', back:'/assets/strength-06-back-final.png' },
 ];
 
 export default function Home() {

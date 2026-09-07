@@ -2002,3 +2002,46 @@
 .contact-details i { flex-basis:50px !important; width:50px !important; height:50px !important; }
 .contact-details i svg { width:21px; height:21px; }
 @media(max-width:650px){.hero-title{width:calc(100% - 28px)!important;padding-top:110px!important}.services-cards .service-card h2{padding-top:10px!important}}
+
+/* Final hover states and hero composition. The title artwork stays fixed. */
+.hero .nav { top: -10px; }
+.hero-character { bottom: 5vh !important; z-index: 5 !important; }
+.hero-tag { bottom: 25vh !important; }
+.hero-scroll { bottom: 11vh !important; }
+.hero-signature { bottom: 12vh !important; }
+
+.strength-grid article .strength-copy h3 {
+  transition: color .28s ease;
+}
+.strength-grid article:hover .strength-copy h3,
+.strength-grid article:focus-within .strength-copy h3 {
+  color: #c4ff41 !important;
+}
+
+.services-cards .service-card h2 {
+  transition: color .28s ease !important;
+}
+.services-cards .service-card:hover h2,
+.services-cards .service-card.is-hovered h2,
+.services-cards .service-card:focus-within h2 {
+  color: #c4ff41 !important;
+}
+
+.contact-details a,
+.contact-details > div {
+  transform-origin: left center;
+  transition: color .28s ease, transform .35s cubic-bezier(.16,1,.3,1) !important;
+}
+.contact-details a:hover,
+.contact-details a:focus-visible,
+.contact-details > div:hover {
+  color: #c4ff41 !important;
+  transform: scale(1.1) !important;
+}
+
+@media (max-width: 650px) {
+  .hero .nav { top: -6px; }
+  .hero-character { bottom: 65px !important; }
+  .hero-tag { bottom: 190px !important; }
+  .hero-scroll { bottom: 76px !important; }
+}
