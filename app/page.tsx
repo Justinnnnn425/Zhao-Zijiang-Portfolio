@@ -34,7 +34,7 @@ export default function Home() {
           <div className="nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">LET’S CONNECT</a></div>
         </nav>
         <div className="hero-title shell"><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
-        <div className="hero-character"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /><span className="glasses-star" aria-hidden="true">✦</span></div>
+        <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /><span className="glasses-star" aria-hidden="true" /></div></div>
         <div className="hero-tag"><strong>ZhaoZijiang</strong><span>赵兹江 Portfolio VISUAL / UI</span></div>
         <a className="hero-scroll" href="#experience"><ArrowDown size={22}/> Scroll to view my work</a>
         <div className="hero-signature"><span className="signature-slash" aria-hidden="true">/</span><p>DESIGNING <em>BEYOND</em><br/>THE VISIBLE.</p></div>
@@ -170,8 +170,8 @@ export default function Home() {
       </footer>
       <div className="footer-marquee" aria-label="Thanks for watching">
         <div className="footer-marquee-track">
-          <span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span>
-          <span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span>
+          <span>✳ THANKS FOR STOPPING BY</span><span>✳ CONTACT ME</span><span>✳ THANKS FOR STOPPING BY</span><span>✳ CONTACT ME</span>
+          <span aria-hidden="true">✳ THANKS FOR STOPPING BY</span><span aria-hidden="true">✳ CONTACT ME</span><span aria-hidden="true">✳ THANKS FOR STOPPING BY</span><span aria-hidden="true">✳ CONTACT ME</span>
         </div>
       </div>
       <a className="back-to-top" href="#home" aria-label="返回顶部"><ArrowUp size={21} /></a>

@@ -2317,3 +2317,100 @@
     margin-inline: auto !important;
   }
 }
+
+/* 2026-09-08 definitive fixes. */
+@media (min-width: 651px) {
+  .hero > nav.nav.shell {
+    left: 50% !important;
+    right: auto !important;
+    width: min(760px, calc(100vw - 96px)) !important;
+    margin: 0 !important;
+    translate: -50% 0 !important;
+  }
+}
+
+.hero-character-stage {
+  position: relative;
+  width: 100%;
+  animation: heroCharacterSway 7s ease-in-out infinite alternate;
+  transform-origin: 50% 100%;
+}
+
+.hero-character-stage > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: none !important;
+}
+
+.glasses-star {
+  left: 58.5% !important;
+  top: 20.5% !important;
+  width: 48px;
+  height: 48px;
+  font-size: 0 !important;
+  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 13px rgba(255,255,255,.95));
+}
+
+.glasses-star::before,
+.glasses-star::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 48px;
+  background: #fff;
+  clip-path: polygon(50% 0, 100% 44%, 100% 56%, 50% 100%, 0 56%, 0 44%);
+  transform: translate(-50%, -50%);
+}
+
+.glasses-star::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.strength-visual .strength-front,
+.strength-visual .strength-back {
+  -webkit-backface-visibility: hidden !important;
+  backface-visibility: hidden !important;
+  transform-style: preserve-3d !important;
+}
+
+.strength-visual .strength-front {
+  z-index: 2 !important;
+  transform: rotateY(0deg) translateZ(1px) !important;
+}
+
+.strength-visual .strength-back {
+  z-index: 1 !important;
+  transform: rotateY(180deg) translateZ(1px) !important;
+}
+
+.strength-visual .strength-back > img {
+  transform: none !important;
+}
+
+.strength-grid article:hover .strength-front,
+.strength-grid article:focus-within .strength-front {
+  visibility: hidden !important;
+}
+
+.strength-grid article:hover .strength-back,
+.strength-grid article:focus-within .strength-back {
+  z-index: 3 !important;
+}
+
+.projects.section {
+  padding-bottom: clamp(62px, 6vw, 96px) !important;
+}
+
+.contact-section {
+  padding-top: clamp(62px, 6vw, 96px) !important;
+}
+
+@media (max-width: 650px) {
+  .glasses-star { left: 55% !important; top: 22.5% !important; width: 34px; height: 34px; }
+  .glasses-star::before, .glasses-star::after { height: 34px; width: 4px; }
+  .projects.section { padding-bottom: 52px !important; }
+  .contact-section { padding-top: 52px !important; }
+}
