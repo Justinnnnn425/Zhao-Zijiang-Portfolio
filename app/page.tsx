@@ -4,6 +4,7 @@ import SpotlightCard from '@/components/SpotlightCard';
 import PortfolioMotion from '@/components/PortfolioMotion';
 import BendingMarquee from '@/components/BendingMarquee';
 import CursorWave from '@/components/CursorWave';
+import WarpedCard from '@/components/WarpedCard';
 
 const projects = [
   { index: '01', title: '知鸟品牌视觉系统', subtitle: 'BRAND IDENTITY / 2021—2025', tone: 'blue', copy: '重塑企业培训平台的品牌语言，从主视觉、字体与色彩规范，到课程、活动与运营物料的完整视觉系统。' },
@@ -13,12 +14,12 @@ const projects = [
 ];
 
 const strengths = [
-  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-final.png', back:'/assets/strength-01-back-final.png' },
-  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-final.png', back:'/assets/strength-02-back-final.png' },
-  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-final.png', back:'/assets/strength-03-back-final.png' },
-  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-final.png', back:'/assets/strength-04-back-final.png' },
-  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/strength-05-front-final.png', back:'/assets/strength-05-back-final.png' },
-  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/strength-06-front-final.png', back:'/assets/strength-06-back-final.png' },
+  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-v7.png', back:'/assets/strength-01-back-v7.png' },
+  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-v7.png', back:'/assets/strength-02-back-v7.png' },
+  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-v7.png', back:'/assets/strength-03-back-v7.png' },
+  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-v7.png', back:'/assets/strength-04-back-v7.png' },
+  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/strength-05-front-v7.png', back:'/assets/strength-05-back-v7.png' },
+  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/strength-06-front-v7.png', back:'/assets/strength-06-back-v7.png' },
 ];
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
           <div className="nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">LET’S CONNECT</a></div>
         </nav>
         <div className="hero-title shell"><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
-        <img className="hero-character" src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" />
+        <div className="hero-character"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /><span className="glasses-star" aria-hidden="true">✦</span></div>
         <div className="hero-tag"><strong>ZhaoZijiang</strong><span>赵兹江 Portfolio VISUAL / UI</span></div>
         <a className="hero-scroll" href="#experience"><ArrowDown size={22}/> Scroll to view my work</a>
         <div className="hero-signature"><span className="signature-slash" aria-hidden="true">/</span><p>DESIGNING <em>BEYOND</em><br/>THE VISIBLE.</p></div>
@@ -131,12 +132,12 @@ export default function Home() {
 
       <section className="section about shell" id="about">
         <div className="about-grid">
-          <div className="portrait-wrap"><img src="/assets/profile-portrait-final.png" alt="视觉设计师赵兹江的橙绿科技感人物视觉" /><span>BASED IN SHENZHEN</span></div>
+          <WarpedCard className="portrait-wrap" imageSrc="/assets/profile-portrait-final.png" />
           <div className="about-copy">
             <p className="kicker">HIGHLY EXPERIENCED SENIOR DESIGNER</p>
             <h2>在审美、秩序与商业目标之间，<br />创造真正<span>有效</span>的视觉体验。</h2>
             <p className="bio">我是一名拥有 14 年经验的高级视觉 / UI 设计师。长期负责企业学习平台、金融产品与品牌运营的全渠道视觉设计，既能独立从 0 到 1 搭建产品与品牌体系，也能带领团队稳定交付高质量设计。</p>
-            <div className="contact-row"><a href="tel:13620215425"><Phone size={15}/> 136 2021 5425</a><a href="mailto:215292285@qq.com"><Mail size={15}/> 215292285@qq.com</a></div>
+            <div className="contact-row"><a href="tel:13620215425"><Phone size={15}/> 136 2021 5425</a><a href="mailto:215292285@qq.com"><Mail size={15}/> 215292285@qq.com</a><span>BASED IN SHENZHEN</span></div>
           </div>
         </div>
       </section>

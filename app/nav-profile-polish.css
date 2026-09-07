@@ -2135,3 +2135,102 @@
   .hero-character { bottom: -1px !important; width: 980px !important; }
   .services-cards .service-card h2 { padding-top: 18px !important; }
 }
+
+/* Final positioning and interaction pass. */
+.hero .nav {
+  left: 0 !important;
+  right: 0 !important;
+  width: min(760px, calc(100% - 96px)) !important;
+  margin-inline: auto !important;
+}
+
+.hero-scroll {
+  border: .5px solid rgba(255,255,255,.78) !important;
+}
+
+.hero-character {
+  overflow: visible;
+  height: auto;
+  pointer-events: none;
+}
+
+.hero-character > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  animation: heroCharacterSway 7s ease-in-out infinite alternate;
+  transform-origin: 50% 100%;
+}
+
+.glasses-star {
+  position: absolute;
+  z-index: 3;
+  left: 54%;
+  top: 22%;
+  color: #fff;
+  font-size: clamp(24px, 2.4vw, 48px);
+  line-height: 1;
+  filter: drop-shadow(0 0 6px #fff) drop-shadow(0 0 14px rgba(255,255,255,.95));
+  animation: glassesStar 1.9s ease-in-out infinite;
+}
+
+@keyframes heroCharacterSway {
+  from { transform: translate3d(-.7%,0,0) rotate(-.15deg); }
+  to { transform: translate3d(.7%,0,0) rotate(.15deg); }
+}
+
+@keyframes glassesStar {
+  0%, 100% { opacity: .18; transform: scale(.55) rotate(0deg); }
+  45% { opacity: 1; transform: scale(1.15) rotate(28deg); }
+  62% { opacity: .72; transform: scale(.86) rotate(42deg); }
+}
+
+.hero-tag {
+  gap: 12px;
+}
+
+.hero-tag strong,
+.hero-tag span {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero-tag span {
+  width: 100%;
+  font-size: clamp(18px, 1.18vw, 22px) !important;
+  letter-spacing: .018em !important;
+}
+
+.contact-row {
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-row > span {
+  color: #a0a3a7;
+  font: 11px/1 monospace;
+  letter-spacing: .16em;
+  white-space: nowrap;
+}
+
+.portrait-wrap {
+  cursor: crosshair;
+}
+
+.portrait-wrap > div {
+  width: 100% !important;
+  max-width: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.portrait-wrap canvas {
+  display: block;
+}
+
+@media (max-width: 650px) {
+  .hero .nav { width: calc(100% - 28px) !important; }
+  .glasses-star { left: 51%; top: 24%; }
+  .hero-tag { gap: 8px; }
+  .hero-tag span { font-size: 14px !important; }
+}
