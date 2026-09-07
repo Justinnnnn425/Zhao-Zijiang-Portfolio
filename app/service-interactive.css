@@ -1,0 +1,12 @@
+.services-cards-image{display:none}
+.services-bg-image{z-index:0}
+.services-showcase:after{display:block;background:linear-gradient(0deg,rgba(0,0,0,.42),rgba(0,0,0,.04) 55%,rgba(0,0,0,.56));z-index:1}
+.services-inner{position:relative;z-index:2}
+.services-title{color:rgba(255,79,42,.32)}
+.services-cards{position:relative;z-index:3}
+.service-card{background:rgba(7,7,7,.74)!important;border:1px solid rgba(255,79,42,.48)!important;backdrop-filter:blur(16px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 18px 70px rgba(0,0,0,.28)}
+.service-card:nth-child(3){border-color:rgba(196,255,65,.36)!important}
+.service-card:nth-child(3)>span,.service-card:nth-child(3)>b{color:#C4FF41}
+.portrait-wrap{background:#000}
+.portrait-wrap img{width:100%;height:100%;object-fit:contain!important;object-position:center!important;filter:none!important;transform:none!important}
+.portrait-wrap:after{display:none!important}

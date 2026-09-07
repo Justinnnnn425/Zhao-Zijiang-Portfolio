@@ -1,0 +1,6 @@
+.card-spotlight{position:relative;border-radius:1.5rem;border:1px solid #442116;background:linear-gradient(145deg,rgba(255,76,22,.18),rgba(12,5,3,.92) 64%);padding:2rem;overflow:hidden;--mouse-x:50%;--mouse-y:50%;--spotlight-color:rgba(255,75,26,.18);--tilt-x:0deg;--tilt-y:0deg;--parallax-x:0px;--parallax-y:0px;transform:none;transform-style:flat;will-change:transform;transition:transform .7s cubic-bezier(.16,1,.3,1),box-shadow .7s cubic-bezier(.16,1,.3,1)}
+.card-spotlight::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at var(--mouse-x) var(--mouse-y),var(--spotlight-color),transparent 72%);opacity:0;transition:opacity .5s ease;pointer-events:none}
+.card-spotlight:hover::before,.card-spotlight:focus-within::before{opacity:.9}
+.card-spotlight.is-hovered{transform:perspective(1000px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) scale3d(1.04,1.04,1.04);transform-style:preserve-3d;box-shadow:0 38px 85px rgba(0,0,0,.42)}
+.card-spotlight>span,.card-spotlight>h2,.card-spotlight>p,.card-spotlight>b{transform:none;transition:none}
+@media(prefers-reduced-motion:reduce){.card-spotlight,.card-spotlight.is-hovered{transform:none!important;transition:none}.card-spotlight>span,.card-spotlight>h2,.card-spotlight>p,.card-spotlight>b{transform:none!important;transition:none}}

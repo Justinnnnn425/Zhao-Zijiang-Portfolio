@@ -1,0 +1,4 @@
+.hero-title span:last-child{color:#fff!important}
+.hero-signature img{width:48px!important;height:42px!important}
+.service-card:nth-child(3)>span,.service-card:nth-child(3)>b{color:#FF4F2A!important}
+.service-card:nth-child(3):after{background:linear-gradient(125deg,rgba(255,255,255,.18),transparent 18%,transparent 72%,rgba(255,79,42,.1))!important}
