@@ -14,7 +14,7 @@ const projects = [
 ];
 
 const strengths = [
-  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-v8.png', back:'/assets/strength-01-back-v8.png' },
+  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-v9.png', back:'/assets/strength-01-back-v9.png' },
   { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-v8.png', back:'/assets/strength-02-back-v8.png' },
   { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-v8.png', back:'/assets/strength-03-back-v8.png' },
   { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-v8.png', back:'/assets/strength-04-back-v8.png' },

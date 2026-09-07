@@ -417,6 +417,25 @@
   .workflow-number { font-size: 13vw; }
 }
 
+/* Compact navigation: the complete floating bar is centered in the viewport. */
+.hero > nav.nav.shell {
+  left: 0 !important;
+  right: 0 !important;
+  width: min(760px, calc(100% - 96px)) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero > nav.nav.shell .nav-links {
+  left: 50% !important;
+  right: auto !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+@media (max-width: 650px) {
+  .hero > nav.nav.shell { width: calc(100% - 28px) !important; }
+}
+
 .strengths .strength-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -2286,5 +2305,15 @@
   .hero > nav.nav.shell {
     top: 12px !important;
     width: calc(100% - 28px) !important;
+  }
+}
+
+/* Last cascade rule: keep the entire desktop navigation visibly centered. */
+@media (min-width: 651px) {
+  .hero > nav.nav.shell {
+    left: 0 !important;
+    right: 0 !important;
+    width: min(760px, calc(100% - 96px)) !important;
+    margin-inline: auto !important;
   }
 }
