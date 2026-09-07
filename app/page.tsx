@@ -157,7 +157,7 @@ export default function Home() {
           <header className="section-head contact-heading"><div className="module-heading-main"><div className="section-label">CONTACT ME</div><h2>联系我</h2></div></header>
           <p className="contact-intro">I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Just reach out!</p>
           <div className="contact-build">
-            <h3><span>LET’S BUILD</span><strong>SOMETHING<br/>AMAZING</strong></h3>
+            <h3><span>LET’S BUILD</span><strong>SOMETHING<br/><em>AMAZING</em></strong></h3>
             <div className="contact-details">
               <a href="mailto:215292285@qq.com"><i><Mail size={24}/></i><span>215292285@qq.com</span></a>
               <a href="tel:13620215425"><i><Phone size={24}/></i><span>136 2021 5425</span></a>
@@ -165,6 +165,12 @@ export default function Home() {
             </div>
           </div>
           <div className="footer-bottom"><span>© 2026 ZIJIANG ZHAO</span><span>VISUAL / UI / AI / BRAND DESIGNER</span><a href="#home">BACK TO TOP ↑</a></div>
+        </div>
+        <div className="footer-marquee" aria-label="Thanks for watching">
+          <div className="footer-marquee-track">
+            <span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span><span>✳ THANKS FOR WATCHING</span>
+            <span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span><span aria-hidden="true">✳ THANKS FOR WATCHING</span>
+          </div>
         </div>
       </footer>
       <a className="back-to-top" href="#home" aria-label="返回顶部"><ArrowUp size={21} /></a>
