@@ -3,8 +3,9 @@ import Grainient from '@/components/Grainient';
 import SpotlightCard from '@/components/SpotlightCard';
 import PortfolioMotion from '@/components/PortfolioMotion';
 import BendingMarquee from '@/components/BendingMarquee';
-import CursorWave from '@/components/CursorWave';
 import WarpedCard from '@/components/WarpedCard';
+import FluidSectionTitle from '@/components/FluidSectionTitle';
+import GlitterWrap from '@/components/originkit/ui/glitterwrap';
 
 const projects = [
   { index: '01', title: '知鸟品牌视觉系统', subtitle: 'BRAND IDENTITY / 2021—2025', tone: 'blue', copy: '重塑企业培训平台的品牌语言，从主视觉、字体与色彩规范，到课程、活动与运营物料的完整视觉系统。' },
@@ -41,9 +42,9 @@ export default function Home() {
       </section>
 
       <section className="experience-visual" id="experience" aria-labelledby="experience-title">
-        <CursorWave className="experience-wave" width="100%" height="100%" cellSize={42} influenceRadiusVmin={9} backgroundColor="#000000" colors={['#FF4F2A','#C4FF41',{stops:['#FF4F2A','#5a1003']}]} opacity={0.55} />
+        <div className="experience-glitter" aria-hidden="true"><GlitterWrap particleCount={500} color1="#ffffff" color2="#FF4F2A" color3="#C4FF41" speed={5} density={100} starSize={12} focalDepth={13} turbulence={1} brightness={76} glitterIntensity={4} trailAmount={92} reverse={false} /></div>
         <header className="section-head experience-heading shell">
-          <div className="module-heading-main"><div className="section-label">WORK EXPERIENCE</div><h2 id="experience-title">工作经历</h2></div>
+          <div className="module-heading-main"><div className="section-label">WORK EXPERIENCE</div><h2 className="fluid-title-heading" id="experience-title"><span>工作经历</span><FluidSectionTitle text="工作经历" /></h2></div>
           <p>CAREER JOURNEY<br />2012—NOW</p>
         </header>
         <div className="experience-timeline shell">
@@ -64,7 +65,7 @@ export default function Home() {
       </section>
 
       <section className="section strengths shell" id="strengths">
-        <div className="section-head"><div className="module-heading-main"><div className="section-label">CAPABILITIES</div><h2>个人优势</h2></div><p>STRATEGY × CRAFT<br />× DELIVERY</p></div>
+        <div className="section-head"><div className="module-heading-main"><div className="section-label">CAPABILITIES</div><h2 className="fluid-title-heading"><span>个人优势</span><FluidSectionTitle text="个人优势" /></h2></div><p>STRATEGY × CRAFT<br />× DELIVERY</p></div>
         <div className="strength-grid">{strengths.map((item) => <article className="advantage-card" key={item.num} tabIndex={0}><div className="advantage-card-media"><img className="advantage-card-front" src={item.image} alt={`${item.title}，正面`} /><img className="advantage-card-back" src={item.back} alt={`${item.title}，背面`} /></div><div className="strength-copy"><h3>{item.title}</h3><small>{item.en}</small><i/><p>{item.copy}</p></div></article>)}</div>
       </section>
 
@@ -112,7 +113,7 @@ export default function Home() {
 
       <section className="workflow-section" id="process" aria-label="工作流程">
         <header className="section-head workflow-heading shell">
-          <div className="module-heading-main"><div className="section-label">DESIGN PROCESS</div><h2>工作流程</h2></div>
+          <div className="module-heading-main"><div className="section-label">DESIGN PROCESS</div><h2 className="fluid-title-heading"><span>工作流程</span><FluidSectionTitle text="工作流程" /></h2></div>
           <p>INSIGHT × CRAFT<br />× VALIDATION</p>
         </header>
         <div className="workflow-list shell">
@@ -143,7 +144,7 @@ export default function Home() {
       </section>
 
       <section className="section projects shell" id="projects">
-        <div className="section-head"><div className="module-heading-main"><div className="section-label">PROJECT SHOWCASE</div><h2>项目展示</h2></div><p>SELECTED PROJECTS<br />2016—2025</p></div>
+        <div className="section-head"><div className="module-heading-main"><div className="section-label">PROJECT SHOWCASE</div><h2 className="fluid-title-heading"><span>项目展示</span><FluidSectionTitle text="项目展示" /></h2></div><p>SELECTED PROJECTS<br />2016—2025</p></div>
         <div className="project-list">{projects.map((project) => (
           <article className={`project-card ${project.tone}`} key={project.index}>
             <header className="project-card-head"><span>{project.index}</span><p>{project.subtitle}</p></header>
@@ -155,7 +156,7 @@ export default function Home() {
 
       <footer className="contact-section" id="contact">
         <div className="contact-inner shell">
-          <header className="section-head contact-heading"><div className="module-heading-main"><div className="section-label">CONTACT ME</div><h2>联系我</h2></div></header>
+          <header className="section-head contact-heading"><div className="module-heading-main"><div className="section-label">CONTACT ME</div><h2 className="fluid-title-heading"><span>联系我</span><FluidSectionTitle text="联系我" /></h2></div></header>
           <p className="contact-intro">I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Just reach out!</p>
           <div className="contact-build">
             <h3><span>LET’S BUILD</span><strong>SOMETHING<br/><em>AMAZING</em></strong></h3>

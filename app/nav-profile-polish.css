@@ -2663,3 +2663,24 @@
   .hero-title .title-star,
   .footer-marquee { animation:none !important; }
 }
+
+/* Originkit title and experience integrations. */
+.fluid-title-heading { position:relative !important; isolation:isolate; }
+.fluid-title-heading > span { visibility:hidden; }
+.fluid-title-heading > div { z-index:1; }
+.experience-glitter { position:absolute; inset:0; z-index:0; pointer-events:none; overflow:hidden; }
+.experience-visual > :not(.experience-glitter) { position:relative; z-index:1; }
+
+/* Whole-band color transition: solid orange → solid lime → solid orange. */
+.footer-marquee {
+  background:#ff4f2a !important;
+  background-image:none !important;
+  animation:footerSolidColorCycle 6s ease-in-out infinite !important;
+}
+@keyframes footerSolidColorCycle {
+  0%,100% { background-color:#ff4f2a; }
+  50% { background-color:#c4ff41; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .footer-marquee { animation:none !important; }
+}
