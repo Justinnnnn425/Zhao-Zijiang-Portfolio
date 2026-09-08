@@ -5,7 +5,7 @@ import PortfolioMotion from '@/components/PortfolioMotion';
 import BendingMarquee from '@/components/BendingMarquee';
 import WarpedCard from '@/components/WarpedCard';
 import FluidSectionTitle from '@/components/FluidSectionTitle';
-import GlitterWrap from '@/components/originkit/ui/glitterwrap';
+import GlitterWrap from '@/components/originkit/ui/glitterwrap-custom-style';
 
 const projects = [
   { index: '01', title: '知鸟品牌视觉系统', subtitle: 'BRAND IDENTITY / 2021—2025', tone: 'blue', copy: '重塑企业培训平台的品牌语言，从主视觉、字体与色彩规范，到课程、活动与运营物料的完整视觉系统。' },
@@ -42,7 +42,7 @@ export default function Home() {
       </section>
 
       <section className="experience-visual" id="experience" aria-labelledby="experience-title">
-        <div className="experience-glitter" aria-hidden="true"><GlitterWrap particleCount={500} color1="#ffffff" color2="#FF4F2A" color3="#C4FF41" speed={5} density={100} starSize={12} focalDepth={13} turbulence={1} brightness={76} glitterIntensity={4} trailAmount={92} reverse={false} /></div>
+        <div className="experience-glitter" aria-hidden="true"><GlitterWrap /></div>
         <header className="section-head experience-heading shell">
           <div className="module-heading-main"><div className="section-label">WORK EXPERIENCE</div><h2 className="fluid-title-heading" id="experience-title"><span>工作经历</span><FluidSectionTitle text="工作经历" /></h2></div>
           <p>CAREER JOURNEY<br />2012—NOW</p>

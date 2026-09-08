@@ -35,7 +35,14 @@ export default function FluidSectionTitle({ text }: { text: string }) {
         letterSpacing: '-0.055em',
         textAlign: 'left',
       }}
-      style={{ position: 'absolute', inset: 0, overflow: 'visible' }}
+      style={{
+        position: 'absolute',
+        left: '-8px',
+        top: '-20px',
+        width: 'calc(100% + 40px)',
+        height: 'calc(100% + 40px)',
+        overflow: 'visible',
+      }}
     />
   );
 }
