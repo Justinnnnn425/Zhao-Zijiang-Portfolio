@@ -19,12 +19,12 @@ const projects = [
 ];
 
 const strengths = [
-  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/advantage-1-front.png', back:'/assets/advantage-1-back.png' },
-  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/advantage-2-front.png', back:'/assets/advantage-2-back.png' },
-  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/advantage-3-front.png', back:'/assets/advantage-3-back.png' },
-  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/advantage-4-front.png', back:'/assets/advantage-4-back.png' },
-  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/advantage-5-front.png', back:'/assets/advantage-5-back.png' },
-  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/advantage-6-front.png', back:'/assets/advantage-6-back.png' },
+  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14年视觉设计积淀，覆盖 UI、Web、运营及多元视觉场景，以成熟的审美与设计语言，构建高品质视觉体验。', image:'/assets/advantage-1-front.png', back:'/assets/advantage-1-back.png' },
+  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品思维，从用户需求与使用场景出发，兼顾体验、逻辑与多端落地，推动设计形成完整闭环。', image:'/assets/advantage-2-front.png', back:'/assets/advantage-2-back.png' },
+  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'从品牌 VI 到全渠道视觉体系，建立统一且具有辨识度的品牌语言，并持续推动视觉资产的搭建、迭代与延展。', image:'/assets/advantage-3-front.png', back:'/assets/advantage-3-back.png' },
+  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'拥有电商全链路与运营经验，将设计与营销策略结合，以商业目标驱动视觉表达，让创意兼具传播力与转化价值。', image:'/assets/advantage-4-front.png', back:'/assets/advantage-4-back.png' },
+  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'将 AI 深度融入创意探索与设计工作流，拓展视觉表达边界，同时提升创意效率、方案丰富度与设计产能。', image:'/assets/advantage-5-front.png', back:'/assets/advantage-5-back.png' },
+  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'具备设计团队管理与项目统筹经验，通过流程标准化、资源协同与质量把控，持续提升团队整体设计效能。', image:'/assets/advantage-6-front.png', back:'/assets/advantage-6-back.png' },
 ];
 
 export default function Home() {
