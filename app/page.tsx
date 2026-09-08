@@ -33,9 +33,9 @@ export default function Home() {
           <a className="site-nav-brand" href="#home"><img src="/assets/zhaozijiang-logo.png" alt="赵兹江个人标志" /></a>
           <div className="site-nav-links"><a className="active" href="#home" aria-current="page">PORTFOLIO</a><a href="#experience">EXPERIENCE</a><a href="#strengths">CAPABILITIES</a><a href="#services">SERVICE</a><a href="#process">PROCESS</a><a href="#projects">PROJECTS</a><a href="#contact">CONTACT</a></div>
         </nav>
-        <div className="hero-title shell"><span className="title-star" aria-hidden="true" /><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
+        <div className="hero-title shell"><svg className="title-star" aria-hidden="true" viewBox="0 0 100 100"><path d="M50 0C54 34 66 46 100 50C66 54 54 66 50 100C46 66 34 54 0 50C34 46 46 34 50 0Z" /></svg><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
         <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /></div></div>
-        <div className="hero-tag"><strong>ZhaoZijiang</strong><span>赵兹江 Portfolio VISUAL / UI</span></div>
+        <div className="hero-tag"><strong>ZhaoZijiang</strong><span>赵兹江 VISUAL / UI&nbsp;&nbsp;Portfolio</span></div>
         <a className="hero-scroll" href="#experience"><ArrowDown size={22}/> Scroll to view my work</a>
         <div className="hero-signature"><span className="signature-slash" aria-hidden="true">/</span><p>DESIGNING <em>BEYOND</em><br/>THE VISIBLE.</p></div>
       </section>

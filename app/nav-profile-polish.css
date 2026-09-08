@@ -2590,3 +2590,32 @@
 @media (prefers-reduced-motion: reduce) {
   .advantage-card-media > img { transition:none; }
 }
+
+/* Latest hero, navigation and contact refinements. */
+.hero-title .title-star {
+  overflow: visible;
+  color: #fff;
+  fill: currentColor;
+}
+.hero-title .title-star::before,
+.hero-title .title-star::after { display:none !important; }
+.hero-signature em { font-style:italic !important; }
+.hero > .hero-scroll { transition:color .25s ease, background-color .25s ease; }
+.hero > .hero-scroll:hover { color:#c4ff41 !important; }
+.site-nav { gap:clamp(48px, 4vw, 72px); }
+.site-nav-links a:hover { color:#c4ff41 !important; }
+.contact-section {
+  min-height:auto !important;
+  align-items:flex-start !important;
+  padding-top:clamp(34px, 3vw, 50px) !important;
+}
+.contact-section .contact-inner { padding-top:0 !important; }
+.projects.section { padding-bottom:clamp(34px, 3vw, 50px) !important; }
+.contact-build h3 strong { color:#fff !important; }
+.contact-build h3 strong em { color:#c4ff41 !important; }
+
+@media (max-width:650px) {
+  .site-nav { gap:24px; }
+  .contact-section { padding-top:34px !important; }
+  .projects.section { padding-bottom:34px !important; }
+}
