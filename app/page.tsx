@@ -12,6 +12,10 @@ const projects = [
   { index: '02', title: '直播与课程营销设计', subtitle: 'CAMPAIGN SYSTEM / 2022—2025', tone: 'silver', copy: '建立直播长图与营销海报规范，让分散的内容输出成为可复用、可规模化的视觉资产。' },
   { index: '03', title: '面授教学视觉体系', subtitle: 'OFFLINE EXPERIENCE / 2024—2025', tone: 'lime', copy: '覆盖开班、教学、结业全流程，以统一而清晰的视觉载体沉淀线下培训价值。' },
   { index: '04', title: '加油宝产品与运营视觉', subtitle: 'UI / CAMPAIGN / 2016—2018', tone: 'violet', copy: '从 APP 界面、图标体系到营销闪屏和 H5，统一金融产品的专业感与业务转化体验。' },
+  { index: '05', title: '项目案例 05', subtitle: 'VISUAL DESIGN / 2025', tone: 'blue', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
+  { index: '06', title: '项目案例 06', subtitle: 'UI DESIGN / 2025', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
+  { index: '07', title: '项目案例 07', subtitle: 'BRAND DESIGN / 2025', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
+  { index: '08', title: '项目案例 08', subtitle: 'AI CREATIVE / 2025', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
 ];
 
 const strengths = [
@@ -159,7 +163,7 @@ export default function Home() {
           <header className="section-head contact-heading"><div className="module-heading-main"><div className="section-label">CONTACT ME</div><h2 className="fluid-title-heading"><span>联系我</span><FluidSectionTitle text="联系我" /></h2></div></header>
           <p className="contact-intro">I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Just reach out!</p>
           <div className="contact-build">
-            <h3><span>LET’S BUILD</span><strong>SOMETHING<br/><em>AMAZING</em></strong></h3>
+            <h3><span>LET’S BUILD</span><strong>SOMETHING<br/><em>AMAZING！</em></strong></h3>
             <div className="contact-details">
               <a href="mailto:215292285@qq.com"><i><Mail size={24}/></i><span>215292285@qq.com</span></a>
               <a href="tel:13620215425"><i><Phone size={24}/></i><span>136 2021 5425</span></a>
