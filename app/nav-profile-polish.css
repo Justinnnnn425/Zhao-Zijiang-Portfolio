@@ -2636,9 +2636,9 @@
   animation:titleStarOrbit 2.8s linear infinite !important;
 }
 @keyframes titleStarOrbit {
-  0% { opacity:1; transform:rotate(0deg) scale(.72); }
-  50% { opacity:1; transform:rotate(180deg) scale(1.18); }
-  100% { opacity:1; transform:rotate(360deg) scale(.72); }
+  0% { opacity:1; transform:rotate(0deg) scale(.05); }
+  50% { opacity:1; transform:rotate(180deg) scale(1); }
+  100% { opacity:1; transform:rotate(360deg) scale(.05); }
 }
 .about { border-bottom:0 !important; }
 .contact-build {
@@ -2648,12 +2648,13 @@
   padding-bottom:clamp(34px,3vw,50px) !important;
 }
 .footer-marquee {
-  background:linear-gradient(90deg,#ff4f2a 0%,#c4ff41 50%,#ff4f2a 100%) !important;
+  background:linear-gradient(90deg,#ff4f2a 0%,#c4ff41 25%,#ff4f2a 50%,#c4ff41 75%,#ff4f2a 100%) !important;
   background-size:200% 100% !important;
-  animation:footerGradientLoop 5s linear infinite;
+  animation:footerGradientLoop 6s linear infinite;
 }
 @keyframes footerGradientLoop {
-  to { background-position:200% 0; }
+  from { background-position:0 0; }
+  to { background-position:-200% 0; }
 }
 @media (max-width:650px) {
   .site-nav { padding-left:24px; padding-right:24px; }
