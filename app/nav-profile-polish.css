@@ -2788,3 +2788,17 @@
   -webkit-backdrop-filter:blur(28px) saturate(150%) !important;
   backdrop-filter:blur(28px) saturate(150%) !important;
 }
+
+/* Keep the supplied artwork intact: no crop, stretch, or hover zoom. */
+.projects .project-card:first-child .project-image {
+  background:#000 !important;
+}
+.projects .project-card:first-child .project-image img,
+.projects .project-card:first-child:hover .project-image img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  transform:none !important;
+  filter:none !important;
+}
