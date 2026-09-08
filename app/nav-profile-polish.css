@@ -2527,7 +2527,7 @@
   width: min(960px, calc(100vw - 32px));
   max-width: calc(100vw - 32px);
   min-height: 58px;
-  padding: 7px 22px 7px 16px;
+  padding: 7px 38px;
   border: 1px solid rgba(255,255,255,.22);
   border-radius: 999px;
   background: rgba(8,8,8,.72);
@@ -2579,7 +2579,7 @@
 .footer-marquee .footer-marquee-track span { font-size: clamp(10px, 1.02vw, 20px) !important; }
 
 @media (max-width: 650px) {
-  .site-nav { top:12px; gap:12px; width:calc(100vw - 20px); min-height:50px; padding:5px 12px; }
+  .site-nav { top:12px; gap:12px; width:calc(100vw - 20px); min-height:50px; padding:5px 18px; }
   .site-nav-brand { flex-basis:19px; width:19px; height:19px; }
   .site-nav-links { justify-content:flex-start; gap:18px; overflow-x:auto; scrollbar-width:none; }
   .site-nav-links::-webkit-scrollbar { display:none; }

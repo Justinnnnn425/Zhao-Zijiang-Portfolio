@@ -6,6 +6,43 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 export default function PortfolioMotion() {
   useLayoutEffect(() => {
+    const links = Array.from(document.querySelectorAll<HTMLAnchorElement>('.site-nav-links a'));
+    const sections = links
+      .map((link) => document.querySelector<HTMLElement>(link.getAttribute('href') || ''))
+      .filter((section): section is HTMLElement => Boolean(section));
+
+    const setActive = (id: string) => {
+      links.forEach((link) => {
+        const active = link.getAttribute('href') === `#${id}`;
+        link.classList.toggle('active', active);
+        if (active) link.setAttribute('aria-current', 'page');
+        else link.removeAttribute('aria-current');
+      });
+    };
+
+    const onClick = (event: Event) => {
+      const link = event.currentTarget as HTMLAnchorElement;
+      setActive(link.hash.slice(1));
+    };
+    links.forEach((link) => link.addEventListener('click', onClick));
+
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+      if (visible?.target.id) setActive(visible.target.id);
+    }, { rootMargin: '-18% 0px -62% 0px', threshold: [0, .05, .2] });
+
+    sections.forEach((section) => observer.observe(section));
+    setActive(window.location.hash.slice(1) || 'home');
+
+    return () => {
+      observer.disconnect();
+      links.forEach((link) => link.removeEventListener('click', onClick));
+    };
+  }, []);
+
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
