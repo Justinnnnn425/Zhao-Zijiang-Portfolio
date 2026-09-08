@@ -8,7 +8,7 @@ import FluidSectionTitle from '@/components/FluidSectionTitle';
 import GlitterWrap from '@/components/originkit/ui/glitterwrap-custom-style';
 
 const projects = [
-  { index: '01', title: '知鸟品牌视觉系统', subtitle: 'BRAND IDENTITY / 2021—2025', tone: 'blue', copy: '重塑企业培训平台的品牌语言，从主视觉、字体与色彩规范，到课程、活动与运营物料的完整视觉系统。' },
+  { index: '01', title: '知鸟品牌视觉系统', subtitle: 'BRAND IDENTITY / 2021—2025', tone: 'blue', copy: '重塑企业培训平台的品牌语言，从主视觉、字体与色彩规范，到课程、活动与运营物料的完整视觉系统。', image: '/assets/project-01-zhiniao.png' },
   { index: '02', title: '直播与课程营销设计', subtitle: 'CAMPAIGN SYSTEM / 2022—2025', tone: 'silver', copy: '建立直播长图与营销海报规范，让分散的内容输出成为可复用、可规模化的视觉资产。' },
   { index: '03', title: '面授教学视觉体系', subtitle: 'OFFLINE EXPERIENCE / 2024—2025', tone: 'lime', copy: '覆盖开班、教学、结业全流程，以统一而清晰的视觉载体沉淀线下培训价值。' },
   { index: '04', title: '加油宝产品与运营视觉', subtitle: 'UI / CAMPAIGN / 2016—2018', tone: 'violet', copy: '从 APP 界面、图标体系到营销闪屏和 H5，统一金融产品的专业感与业务转化体验。' },
@@ -152,7 +152,7 @@ export default function Home() {
         <div className="project-list">{projects.map((project) => (
           <article className={`project-card ${project.tone}`} key={project.index}>
             <header className="project-card-head"><span>{project.index}</span><p>{project.subtitle}</p></header>
-            <div className="project-image"><img src="/assets/hero-art.png" alt="" /><div className="mock-ui"><i/><i/><i/></div></div>
+            <div className="project-image"><img src={project.image || '/assets/hero-art.png'} alt={project.index === '01' ? '平安知鸟 IP 形象优化设计' : ''} />{project.index !== '01' && <div className="mock-ui"><i/><i/><i/></div>}</div>
             <div className="project-info"><div><h3>{project.title}</h3><p className="project-copy">{project.copy}</p></div><button aria-label={`查看${project.title}`}>VIEW CASE <ArrowUpRight size={18}/></button></div>
           </article>
         ))}</div>

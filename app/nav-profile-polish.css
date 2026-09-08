@@ -1129,6 +1129,33 @@
   width: 100%;
 }
 
+/* Borderless hero CTA and lime project-card hover state. */
+.hero > .hero-scroll,
+.hero > .hero-scroll:hover {
+  border:0 !important;
+  box-shadow:none !important;
+}
+.projects .project-card {
+  transition:background-color .32s ease,color .32s ease,border-color .32s ease;
+}
+.projects .project-card:hover {
+  color:#050505 !important;
+  background:#c4ff41 !important;
+  border-color:#c4ff41 !important;
+}
+.projects .project-card:hover .project-card-head span,
+.projects .project-card:hover .project-card-head p,
+.projects .project-card:hover .project-info h3,
+.projects .project-card:hover .project-info p,
+.projects .project-card:hover .project-info button {
+  color:#050505 !important;
+  border-color:rgba(5,5,5,.32) !important;
+}
+.projects .project-card:first-child .project-image img {
+  object-position:center center;
+  filter:none !important;
+}
+
 .strengths .strength-copy > i {
   display: block;
   width: 30px;
