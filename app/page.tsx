@@ -14,12 +14,12 @@ const projects = [
 ];
 
 const strengths = [
-  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/strength-01-front-v9.png', back:'/assets/strength-01-back-v9.png' },
-  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/strength-02-front-v8.png', back:'/assets/strength-02-back-v8.png' },
-  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/strength-03-front-v8.png', back:'/assets/strength-03-back-v8.png' },
-  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/strength-04-front-v8.png', back:'/assets/strength-04-back-v8.png' },
-  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/strength-05-front-v8.png', back:'/assets/strength-05-back-v8.png' },
-  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/strength-06-front-v8.png', back:'/assets/strength-06-back-v8.png' },
+  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14 年设计积淀，以多元视觉语言构建高品质体验。', image:'/assets/advantage-1-front.png', back:'/assets/advantage-1-back.png' },
+  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品，推动体验与设计完整落地。', image:'/assets/advantage-2-front.png', back:'/assets/advantage-2-back.png' },
+  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'构建统一品牌语言，持续沉淀并拓展视觉资产。', image:'/assets/advantage-3-front.png', back:'/assets/advantage-3-back.png' },
+  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'连接设计与营销，让创意产生传播与转化价值。', image:'/assets/advantage-4-front.png', back:'/assets/advantage-4-back.png' },
+  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'以 AI 拓展创意边界，重塑设计效率与表达方式。', image:'/assets/advantage-5-front.png', back:'/assets/advantage-5-back.png' },
+  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'统筹团队、项目与标准，驱动更高质量的设计产出。', image:'/assets/advantage-6-front.png', back:'/assets/advantage-6-back.png' },
 ];
 
 export default function Home() {
@@ -29,9 +29,9 @@ export default function Home() {
       <section className="hero" id="home">
         <Grainient className="hero-grainient" color1="#ff4b1f" color2="#090208" color3="#ffb137" timeSpeed={0.86} warpStrength={1.4} warpFrequency={5.5} warpAmplitude={22} blendAngle={-28} grainAmount={0.08} contrast={1.32} saturation={1.08} />
         <div className="hero-grid" />
-        <nav className="nav shell" aria-label="主要导航">
-          <a className="brand" href="#home"><img src="/assets/zhaozijiang-logo.png" alt="赵兹江个人标志" /></a>
-          <div className="nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">CONTACTS</a></div>
+        <nav className="site-nav" aria-label="主要导航">
+          <a className="site-nav-brand" href="#home"><img src="/assets/zhaozijiang-logo.png" alt="赵兹江个人标志" /></a>
+          <div className="site-nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">CONTACTS</a></div>
         </nav>
         <div className="hero-title shell"><span className="title-star" aria-hidden="true" /><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
         <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /></div></div>
@@ -65,7 +65,7 @@ export default function Home() {
 
       <section className="section strengths shell" id="strengths">
         <div className="section-head"><div className="module-heading-main"><div className="section-label">CAPABILITIES</div><h2>个人优势</h2></div><p>STRATEGY × CRAFT<br />× DELIVERY</p></div>
-        <div className="strength-grid">{strengths.map((item) => <article key={item.num}><div className="strength-visual"><div className="strength-flipper"><img className="strength-front" src={item.image} alt={item.title} /><div className="strength-back" aria-hidden="true"><img src={item.back} alt="" /></div></div></div><div className="strength-copy"><h3>{item.title}</h3><small>{item.en}</small><i/><p>{item.copy}</p></div></article>)}</div>
+        <div className="strength-grid">{strengths.map((item) => <article className="advantage-card" key={item.num} tabIndex={0}><div className="advantage-card-media"><img className="advantage-card-front" src={item.image} alt={`${item.title}，正面`} /><img className="advantage-card-back" src={item.back} alt={`${item.title}，背面`} /></div><div className="strength-copy"><h3>{item.title}</h3><small>{item.en}</small><i/><p>{item.copy}</p></div></article>)}</div>
       </section>
 
       <BendingMarquee
