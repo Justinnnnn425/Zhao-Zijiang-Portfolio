@@ -26,18 +26,30 @@ export default function PortfolioMotion() {
     };
     links.forEach((link) => link.addEventListener('click', onClick));
 
-    const observer = new IntersectionObserver((entries) => {
-      const visible = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (visible?.target.id) setActive(visible.target.id);
-    }, { rootMargin: '-18% 0px -62% 0px', threshold: [0, .05, .2] });
-
-    sections.forEach((section) => observer.observe(section));
-    setActive(window.location.hash.slice(1) || 'home');
+    let frame = 0;
+    const syncActiveSection = () => {
+      frame = 0;
+      const marker = window.innerHeight * 0.28;
+      let current = sections[0];
+      sections.forEach((section) => {
+        if (section.getBoundingClientRect().top <= marker) current = section;
+      });
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) {
+        current = sections[sections.length - 1];
+      }
+      if (current?.id) setActive(current.id);
+    };
+    const onScroll = () => {
+      if (!frame) frame = window.requestAnimationFrame(syncActiveSection);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    syncActiveSection();
 
     return () => {
-      observer.disconnect();
+      if (frame) window.cancelAnimationFrame(frame);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
       links.forEach((link) => link.removeEventListener('click', onClick));
     };
   }, []);
