@@ -2523,11 +2523,11 @@
   left: 50%;
   display: flex;
   align-items: center;
-  gap: 34px;
-  width: max-content;
+  gap: 24px;
+  width: min(960px, calc(100vw - 32px));
   max-width: calc(100vw - 32px);
   min-height: 58px;
-  padding: 7px 12px 7px 10px;
+  padding: 7px 22px 7px 16px;
   border: 1px solid rgba(255,255,255,.22);
   border-radius: 999px;
   background: rgba(8,8,8,.72);
@@ -2536,10 +2536,10 @@
   -webkit-backdrop-filter: blur(18px);
   transform: translateX(-50%);
 }
-.site-nav-brand { display:block; flex:0 0 44px; width:44px; height:42px; }
+.site-nav-brand { display:block; flex:0 0 22px; width:22px; height:21px; }
 .site-nav-brand img { display:block; width:100%; height:100%; object-fit:contain; filter:invert(1); }
-.site-nav-links { display:flex; align-items:center; gap:clamp(22px,2.1vw,38px); }
-.site-nav-links a { color:rgba(255,255,255,.66); font:700 11px/1 Arial,sans-serif; letter-spacing:.12em; text-decoration:none; transition:color .2s ease; }
+.site-nav-links { display:flex; flex:1; align-items:center; justify-content:space-between; gap:18px; }
+.site-nav-links a { color:rgba(255,255,255,.66); font:700 10px/1 Arial,sans-serif; letter-spacing:.1em; text-decoration:none; white-space:nowrap; transition:color .2s ease; }
 .site-nav-links a:hover, .site-nav-links a.active { color:#fff; }
 
 /* New independent two-face cards; no legacy flipper rules can affect these. */
@@ -2579,9 +2579,10 @@
 .footer-marquee .footer-marquee-track span { font-size: clamp(10px, 1.02vw, 20px) !important; }
 
 @media (max-width: 650px) {
-  .site-nav { top:12px; gap:16px; min-height:50px; padding:5px 10px 5px 7px; }
-  .site-nav-brand { flex-basis:38px; width:38px; height:38px; }
-  .site-nav-links { gap:14px; }
+  .site-nav { top:12px; gap:12px; width:calc(100vw - 20px); min-height:50px; padding:5px 12px; }
+  .site-nav-brand { flex-basis:19px; width:19px; height:19px; }
+  .site-nav-links { justify-content:flex-start; gap:18px; overflow-x:auto; scrollbar-width:none; }
+  .site-nav-links::-webkit-scrollbar { display:none; }
   .site-nav-links a { font-size:9px; letter-spacing:.08em; }
   .hero-title .title-star { left:13.2% !important; top:132px !important; }
 }

@@ -31,7 +31,7 @@ export default function Home() {
         <div className="hero-grid" />
         <nav className="site-nav" aria-label="主要导航">
           <a className="site-nav-brand" href="#home"><img src="/assets/zhaozijiang-logo.png" alt="赵兹江个人标志" /></a>
-          <div className="site-nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">CONTACTS</a></div>
+          <div className="site-nav-links"><a className="active" href="#home" aria-current="page">PORTFOLIO</a><a href="#experience">EXPERIENCE</a><a href="#strengths">CAPABILITIES</a><a href="#services">SERVICE</a><a href="#process">PROCESS</a><a href="#projects">PROJECTS</a><a href="#contact">CONTACT</a></div>
         </nav>
         <div className="hero-title shell"><span className="title-star" aria-hidden="true" /><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
         <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /></div></div>
@@ -110,7 +110,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="workflow-section" aria-label="工作流程">
+      <section className="workflow-section" id="process" aria-label="工作流程">
         <header className="section-head workflow-heading shell">
           <div className="module-heading-main"><div className="section-label">DESIGN PROCESS</div><h2>工作流程</h2></div>
           <p>INSIGHT × CRAFT<br />× VALIDATION</p>
