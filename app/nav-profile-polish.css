@@ -2601,7 +2601,11 @@
 .hero-title .title-star::after { display:none !important; }
 .hero-signature em { font-style:italic !important; }
 .hero > .hero-scroll { transition:color .25s ease, background-color .25s ease; }
-.hero > .hero-scroll:hover { color:#c4ff41 !important; }
+.hero > .hero-scroll:hover {
+  color:#050505 !important;
+  background:#c4ff41 !important;
+  border-color:#c4ff41 !important;
+}
 .site-nav { gap:clamp(48px, 4vw, 72px); }
 .site-nav-links a:hover { color:#c4ff41 !important; }
 .contact-section {
