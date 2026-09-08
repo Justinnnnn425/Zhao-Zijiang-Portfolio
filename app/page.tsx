@@ -31,10 +31,10 @@ export default function Home() {
         <div className="hero-grid" />
         <nav className="nav shell" aria-label="主要导航">
           <a className="brand" href="#home"><img src="/assets/zhaozijiang-logo.png" alt="赵兹江个人标志" /></a>
-          <div className="nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">LET’S CONNECT</a></div>
+          <div className="nav-links"><a className="active" href="#projects" aria-current="page">PORTFOLIO</a><a href="#services">PROVIDE</a><a href="#contact">CONTACTS</a></div>
         </nav>
-        <div className="hero-title shell"><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
-        <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /><span className="glasses-star" aria-hidden="true" /></div></div>
+        <div className="hero-title shell"><span className="title-star" aria-hidden="true" /><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
+        <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /></div></div>
         <div className="hero-tag"><strong>ZhaoZijiang</strong><span>赵兹江 Portfolio VISUAL / UI</span></div>
         <a className="hero-scroll" href="#experience"><ArrowDown size={22}/> Scroll to view my work</a>
         <div className="hero-signature"><span className="signature-slash" aria-hidden="true">/</span><p>DESIGNING <em>BEYOND</em><br/>THE VISIBLE.</p></div>
@@ -165,7 +165,6 @@ export default function Home() {
               <div><i><MapPin size={24}/></i><span>ShenZhen</span></div>
             </div>
           </div>
-          <div className="footer-bottom"><span>© 2026 ZIJIANG ZHAO</span><span>VISUAL / UI / AI / BRAND DESIGNER</span><a href="#home">BACK TO TOP ↑</a></div>
         </div>
       </footer>
       <div className="footer-marquee" aria-label="Thanks for watching">

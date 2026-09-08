@@ -417,6 +417,82 @@
   .workflow-number { font-size: 13vw; }
 }
 
+/* 2026-09-08 layout refinement. */
+.hero > nav.nav.shell {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  align-items: center !important;
+}
+
+.hero > nav.nav.shell .brand {
+  grid-column: 1;
+  justify-self: start;
+}
+
+.hero > nav.nav.shell .nav-links {
+  position: static !important;
+  grid-column: 2;
+  justify-self: center;
+  transform: none !important;
+}
+
+.title-star {
+  position: absolute;
+  z-index: 3;
+  left: -10px;
+  top: clamp(50px, 7vh, 84px);
+  width: 48px;
+  height: 48px;
+  filter: drop-shadow(0 0 5px #fff) drop-shadow(0 0 13px rgba(255,255,255,.95));
+  animation: glassesStar 1.9s ease-in-out infinite;
+}
+
+.title-star::before,
+.title-star::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 48px;
+  background: #fff;
+  clip-path: polygon(50% 0, 100% 44%, 100% 56%, 50% 100%, 0 56%, 0 44%);
+  transform: translate(-50%, -50%);
+}
+
+.title-star::after { transform: translate(-50%, -50%) rotate(90deg); }
+
+.services-cards {
+  gap: 62px !important;
+}
+
+.about-copy .bio {
+  font-size: 14px !important;
+}
+
+.contact-build h3 {
+  line-height: .88 !important;
+}
+
+.contact-build {
+  border-bottom: 0 !important;
+}
+
+.footer-marquee-track span {
+  font-size: clamp(17px, 1.7vw, 33px) !important;
+  letter-spacing: .14em !important;
+}
+
+@media (max-width: 1050px) {
+  .services-cards { gap: 44px !important; }
+}
+
+@media (max-width: 650px) {
+  .title-star { left: 2px; top: 86px; width: 34px; height: 34px; }
+  .title-star::before, .title-star::after { width: 4px; height: 34px; }
+  .services-cards { gap: 34px !important; }
+}
+
 /* Compact navigation: the complete floating bar is centered in the viewport. */
 .hero > nav.nav.shell {
   left: 0 !important;
@@ -2414,3 +2490,27 @@
   .projects.section { padding-bottom: 52px !important; }
   .contact-section { padding-top: 52px !important; }
 }
+
+/* Absolute last cascade lock for the current revision. */
+.hero > nav.nav.shell {
+  display: grid !important;
+  grid-template-columns: 1fr auto 1fr !important;
+  align-items: center !important;
+}
+.hero > nav.nav.shell .brand { grid-column: 1 !important; justify-self: start !important; }
+.hero > nav.nav.shell .nav-links {
+  position: static !important;
+  grid-column: 2 !important;
+  justify-self: center !important;
+  transform: none !important;
+}
+.services-showcase .services-cards { gap: 62px !important; }
+#about .about-copy .bio { font-size: 14px !important; }
+.contact-section .contact-build h3 { line-height: .88 !important; }
+.contact-section .contact-build { border-bottom: 0 !important; }
+.footer-marquee .footer-marquee-track span {
+  font-size: clamp(17px, 1.7vw, 33px) !important;
+  letter-spacing: .14em !important;
+}
+@media (max-width: 1050px) { .services-showcase .services-cards { gap: 44px !important; } }
+@media (max-width: 650px) { .services-showcase .services-cards { gap: 34px !important; } }
