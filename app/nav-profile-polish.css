@@ -1169,6 +1169,28 @@
   border-color:#c4ff41 !important;
 }
 
+/* Preserve every supplied project image's original color and use a restrained zoom. */
+.projects .project-card .project-image img {
+  filter:none !important;
+  opacity:1 !important;
+  mix-blend-mode:normal !important;
+}
+.projects .project-card:hover .project-image img {
+  transform:scale(1.1) !important;
+}
+
+/* Give the project showcase more breathing room between adjacent sections. */
+.projects.section {
+  padding-top:clamp(110px,9vw,160px) !important;
+  padding-bottom:clamp(110px,9vw,160px) !important;
+}
+@media (max-width:560px) {
+  .projects.section {
+    padding-top:90px !important;
+    padding-bottom:90px !important;
+  }
+}
+
 .strengths .strength-copy > i {
   display: block;
   width: 30px;
