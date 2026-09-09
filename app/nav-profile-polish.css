@@ -2846,3 +2846,19 @@
   object-position:center center !important;
   filter:none !important;
 }
+
+/* Final section rhythm: tighter project entry, roomier contact section. */
+.projects.section {
+  padding-top:clamp(64px,5vw,90px) !important;
+}
+.contact-section {
+  padding-top:clamp(96px,8vw,140px) !important;
+  padding-bottom:clamp(96px,8vw,140px) !important;
+}
+@media (max-width:650px) {
+  .projects.section { padding-top:64px !important; }
+  .contact-section {
+    padding-top:78px !important;
+    padding-bottom:78px !important;
+  }
+}
