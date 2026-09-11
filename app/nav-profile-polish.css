@@ -2911,11 +2911,15 @@
   color:#050505 !important;
 }
 
-/* Preserve the four-column width while giving portrait project covers full height. */
+/* Preserve the four-column width and let portrait covers define their own height. */
 .projects .project-list {
-  grid-template-rows:420px 500px 700px !important;
+  grid-template-rows:420px 500px auto !important;
 }
 .projects .project-card:nth-child(n+5) .project-image {
+  flex:0 0 auto !important;
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:1106 / 1422;
   background:#000 !important;
 }
 .projects .project-card:nth-child(n+5) .project-image img {
@@ -2926,8 +2930,8 @@
 }
 @media (max-width:900px) {
   .projects .project-list { grid-template-rows:none !important; }
-  .projects .project-card:nth-child(n+5) { min-height:680px; }
+  .projects .project-card:nth-child(n+5) { min-height:0 !important; }
 }
 @media (max-width:560px) {
-  .projects .project-card:nth-child(n+5) { min-height:620px; }
+  .projects .project-card:nth-child(n+5) { min-height:0 !important; }
 }
