@@ -12,10 +12,10 @@ const projects = [
   { index: '02', title: '直播与课程营销设计', subtitle: 'CAMPAIGN SYSTEM / 2022—2025', tone: 'silver', copy: '建立直播长图与营销海报规范，让分散的内容输出成为可复用、可规模化的视觉资产。' },
   { index: '03', title: '面授教学视觉体系', subtitle: 'OFFLINE EXPERIENCE / 2024—2025', tone: 'lime', copy: '覆盖开班、教学、结业全流程，以统一而清晰的视觉载体沉淀线下培训价值。' },
   { index: '04', title: '加油宝产品与运营视觉', subtitle: 'UI / CAMPAIGN / 2016—2018', tone: 'violet', copy: '从 APP 界面、图标体系到营销闪屏和 H5，统一金融产品的专业感与业务转化体验。', image: '/assets/project-04-slot.png' },
-  { index: '05', title: '项目案例 05', subtitle: 'VISUAL DESIGN / 2025', tone: 'blue', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
-  { index: '06', title: '项目案例 06', subtitle: 'UI DESIGN / 2025', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
-  { index: '07', title: '项目案例 07', subtitle: 'BRAND DESIGN / 2025', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
-  { index: '08', title: '项目案例 08', subtitle: 'AI CREATIVE / 2025', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。' },
+  { index: '05', title: 'H5长图海报', subtitle: 'H5 operation poster design', tone: 'blue', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-05-h5.png' },
+  { index: '06', title: '图标设计', subtitle: 'ICON design', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-06-icons.png' },
+  { index: '07', title: '海报 / BANNER设计', subtitle: 'Poster & Banner design', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-07-poster-banner.png' },
+  { index: '08', title: '插画 & 手绘', subtitle: 'Illustration & Drawings', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-08-illustration.png' },
 ];
 
 const strengths = [
