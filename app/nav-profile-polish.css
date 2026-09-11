@@ -2910,3 +2910,24 @@
 .projects .project-card:hover .project-card-head p {
   color:#050505 !important;
 }
+
+/* Preserve the four-column width while giving portrait project covers full height. */
+.projects .project-list {
+  grid-template-rows:420px 500px 700px !important;
+}
+.projects .project-card:nth-child(n+5) .project-image {
+  background:#000 !important;
+}
+.projects .project-card:nth-child(n+5) .project-image img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+}
+@media (max-width:900px) {
+  .projects .project-list { grid-template-rows:none !important; }
+  .projects .project-card:nth-child(n+5) { min-height:680px; }
+}
+@media (max-width:560px) {
+  .projects .project-card:nth-child(n+5) { min-height:620px; }
+}
