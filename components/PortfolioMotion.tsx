@@ -57,6 +57,17 @@ export default function PortfolioMotion() {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
+    const returnTarget = window.location.hash
+      ? document.querySelector<HTMLElement>(window.location.hash)
+      : null;
+    if (returnTarget) {
+      gsap.set('.opening-screen', { autoAlpha: 0, display: 'none' });
+      document.body.classList.remove('motion-active');
+      document.body.style.overflow = '';
+      window.requestAnimationFrame(() => returnTarget.scrollIntoView({ block: 'start' }));
+      return;
+    }
+
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (reduceMotion) {
       gsap.set('.opening-screen', { autoAlpha: 0, display: 'none' });

@@ -2935,3 +2935,25 @@
 @media (max-width:560px) {
   .projects .project-card:nth-child(n+5) { min-height:0 !important; }
 }
+
+/* Unified pure-black backgrounds for the requested homepage regions. */
+.bending-marquee-section,
+.workflow-section,
+.contact-section {
+  background-color:#000 !important;
+  background-image:none !important;
+}
+
+.about.section,
+.projects.section {
+  position:relative;
+  isolation:isolate;
+  background:#000 !important;
+  box-shadow:0 0 0 100vmax #000;
+  clip-path:inset(0 -100vmax);
+}
+
+.projects .project-card:nth-child(3) .project-image img {
+  filter:none !important;
+  object-position:center !important;
+}
