@@ -2901,3 +2901,12 @@
   outline:2px solid #c4ff41;
   outline-offset:4px;
 }
+
+/* Normalize project-card English labels. */
+.projects .project-card-head p {
+  color:#b7b7b2 !important;
+  text-transform:uppercase !important;
+}
+.projects .project-card:hover .project-card-head p {
+  color:#050505 !important;
+}
