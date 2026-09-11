@@ -2963,3 +2963,11 @@
 .services-showcase .services-cards .service-card:nth-child(3) {
   border:.5px solid rgba(255,255,255,.34) !important;
 }
+
+/* Selected project-card arrow treatment. */
+.projects .project-card:hover .project-info button,
+.projects .project-card:focus-within .project-info button {
+  color:#ff4f2a !important;
+  background:#fff !important;
+  border-color:#fff !important;
+}
