@@ -13,7 +13,7 @@ const projects = [
   { index: '03', title: 'UI界面设计', subtitle: 'USER INTERFACE DESIGN', tone: 'lime', copy: '覆盖核心界面与交互场景，以清晰、一致的视觉语言提升产品体验。', image: '/assets/project-03-ui.png' },
   { index: '04', title: '平安知鸟品牌LOGO系统升级', subtitle: 'PINGAN ZHINIAO Brand upgrade design', tone: 'violet', copy: '从超级符号主视觉、字体与色彩规范，到落地应用规范的完整品牌系统性升级。', image: '/assets/project-04-slot.png' },
   { index: '05', title: 'H5长图海报', subtitle: 'H5 operation poster design', tone: 'blue', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-05-h5.png' },
-  { index: '06', title: '图标设计', subtitle: 'ICON design', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-06-icons.png' },
+  { index: '06', title: '图标设计', subtitle: 'ICON design', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-06-icons.png', href: '/projects/icons' },
   { index: '07', title: '海报 / BANNER设计', subtitle: 'Poster & Banner design', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-07-poster-banner.png' },
   { index: '08', title: '插画 & 手绘', subtitle: 'Illustration & Drawings', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-08-illustration.png', href: '/projects/illustrations' },
 ];
