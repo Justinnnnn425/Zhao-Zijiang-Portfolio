@@ -36,13 +36,19 @@ body:has(.icons-page) {
 }
 
 .icon-cell img {
+  position:absolute;
+  top:50%;
+  left:50%;
   display:block;
   width:48%;
   height:48%;
   object-fit:contain;
+  object-position:center;
   opacity:.72;
   user-select:none;
-  transition:opacity .24s ease,filter .24s ease;
+  transform:translate(-50%,-50%);
+  transform-origin:center;
+  transition:width .24s cubic-bezier(.2,.7,.2,1),height .24s cubic-bezier(.2,.7,.2,1),opacity .24s ease,filter .24s ease;
 }
 
 .icon-cell.is-neighbour {
