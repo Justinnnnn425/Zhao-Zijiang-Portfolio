@@ -2967,7 +2967,12 @@
 /* Selected project-card arrow treatment. */
 .projects .project-card:hover .project-info button,
 .projects .project-card:focus-within .project-info button {
-  color:#ff4f2a !important;
-  background:#fff !important;
-  border-color:#fff !important;
+  color:#fff !important;
+  background:#ff4f2a !important;
+  border-color:#ff4f2a !important;
+}
+
+.projects .project-card:hover .project-info button svg,
+.projects .project-card:focus-within .project-info button svg {
+  stroke-width:3 !important;
 }
