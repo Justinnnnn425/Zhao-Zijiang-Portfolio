@@ -20,8 +20,10 @@ export default function ZhiniaoBrandLogoPage() {
         {projectImages.map((imageNumber) => (
           <img
             key={imageNumber}
-            src={`/assets/zhiniao-brand-logo/4-${imageNumber}.png`}
+            src={`/assets/zhiniao-brand-logo/4-${imageNumber}.webp`}
             alt={`平安知鸟品牌 LOGO 系统升级 ${imageNumber}`}
+            loading="lazy"
+            decoding="async"
           />
         ))}
       </section>

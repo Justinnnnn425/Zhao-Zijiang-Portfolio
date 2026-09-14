@@ -22,8 +22,10 @@ export default function ZhiniaoIpProjectPage() {
         {projectImages.map((imageNumber) => (
           <img
             key={imageNumber}
-            src={`/assets/zhiniao-ip/${imageNumber}.png`}
+            src={`/assets/zhiniao-ip/${imageNumber}.webp`}
             alt={`平安知鸟 IP 形象优化设计 ${imageNumber}`}
+            loading="lazy"
+            decoding="async"
           />
         ))}
       </section>

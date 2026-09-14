@@ -41,7 +41,7 @@ export default function IconGrid() {
             onPointerEnter={() => setHovered(index)}
             onPointerLeave={() => setHovered(null)}
           >
-            <img src={`/assets/icon-grid/6_1_${number}.png`} alt={`图标设计作品 ${index + 1}`} draggable={false} />
+            <img src={`/assets/icon-grid/6_1_${number}.webp`} alt={`图标设计作品 ${index + 1}`} loading="lazy" decoding="async" draggable={false} />
           </div>
         ))}
       </section>

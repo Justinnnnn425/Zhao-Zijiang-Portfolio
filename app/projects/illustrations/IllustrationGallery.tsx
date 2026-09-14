@@ -5,8 +5,7 @@ import { useEffect, useState } from 'react';
 
 const illustrationFiles = Array.from({ length: 28 }, (_, index) => {
   const number = index + 1;
-  const extension = [5, 6, 25].includes(number) ? 'jpg' : 'png';
-  return `${number}.${extension}`;
+  return `${number}.webp`;
 });
 
 export default function IllustrationGallery() {
@@ -44,7 +43,7 @@ export default function IllustrationGallery() {
               onClick={() => setActiveImage(src)}
               aria-label={`放大查看插画作品 ${index + 1}`}
             >
-              <img src={src} alt={`插画与手绘作品 ${index + 1}`} />
+              <img src={src} alt={`插画与手绘作品 ${index + 1}`} loading="lazy" decoding="async" />
             </button>
           );
         })}

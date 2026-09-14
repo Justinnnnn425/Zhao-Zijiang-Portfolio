@@ -8,23 +8,23 @@ import FluidSectionTitle from '@/components/FluidSectionTitle';
 import GlitterWrap from '@/components/originkit/ui/glitterwrap-custom-style';
 
 const projects = [
-  { index: '01', title: '平安知鸟IP形象优化设计', subtitle: 'PINGAN ZHINIAO IP DESIGN', tone: 'blue', copy: '重塑平安知鸟IP形象，从主形象到周边运营物料应用的完整视觉系统。', image: '/assets/project-01-zhiniao.png', href: '/projects/zhiniao-ip' },
+  { index: '01', title: '平安知鸟IP形象优化设计', subtitle: 'PINGAN ZHINIAO IP DESIGN', tone: 'blue', copy: '重塑平安知鸟IP形象，从主形象到周边运营物料应用的完整视觉系统。', image: '/assets/project-01-zhiniao.webp', href: '/projects/zhiniao-ip' },
   { index: '02', title: '界面UI & 规范设计', subtitle: 'UI Design Guidelines', tone: 'silver', copy: '建立直播长图与营销海报规范，让分散的内容输出成为可复用、可规模化的视觉资产。' },
-  { index: '03', title: 'UI界面设计', subtitle: 'USER INTERFACE DESIGN', tone: 'lime', copy: '覆盖核心界面与交互场景，以清晰、一致的视觉语言提升产品体验。', image: '/assets/project-03-ui.png' },
-  { index: '04', title: '平安知鸟品牌LOGO系统升级', subtitle: 'PINGAN ZHINIAO Brand upgrade design', tone: 'violet', copy: '从超级符号主视觉、字体与色彩规范，到落地应用规范的完整品牌系统性升级。', image: '/assets/project-04-slot.png', href: '/projects/zhiniao-brand-logo' },
-  { index: '05', title: 'H5长图海报', subtitle: 'H5 operation poster design', tone: 'blue', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-05-h5.png' },
-  { index: '06', title: '图标设计', subtitle: 'ICON design', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-06-icons.png', href: '/projects/icons' },
-  { index: '07', title: '海报 / BANNER设计', subtitle: 'Poster & Banner design', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-07-poster-banner.png' },
-  { index: '08', title: '插画 & 手绘', subtitle: 'Illustration & Drawings', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-08-illustration.png', href: '/projects/illustrations' },
+  { index: '03', title: 'UI界面设计', subtitle: 'USER INTERFACE DESIGN', tone: 'lime', copy: '覆盖核心界面与交互场景，以清晰、一致的视觉语言提升产品体验。', image: '/assets/project-03-ui.webp' },
+  { index: '04', title: '平安知鸟品牌LOGO系统升级', subtitle: 'PINGAN ZHINIAO Brand upgrade design', tone: 'violet', copy: '从超级符号主视觉、字体与色彩规范，到落地应用规范的完整品牌系统性升级。', image: '/assets/project-04-slot.webp', href: '/projects/zhiniao-brand-logo' },
+  { index: '05', title: 'H5长图海报', subtitle: 'H5 operation poster design', tone: 'blue', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-05-h5.webp' },
+  { index: '06', title: '图标设计', subtitle: 'ICON design', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-06-icons.webp', href: '/projects/icons' },
+  { index: '07', title: '海报 / BANNER设计', subtitle: 'Poster & Banner design', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-07-poster-banner.webp' },
+  { index: '08', title: '插画 & 手绘', subtitle: 'Illustration & Drawings', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-08-illustration.webp', href: '/projects/illustrations' },
 ];
 
 const strengths = [
-  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14年视觉设计积淀，覆盖 UI、Web、运营及多元视觉场景，以成熟的审美与设计语言，构建高品质视觉体验。', image:'/assets/advantage-1-front.png', back:'/assets/advantage-1-back.png' },
-  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品思维，从用户需求与使用场景出发，兼顾体验、逻辑与多端落地，推动设计形成完整闭环。', image:'/assets/advantage-2-front.png', back:'/assets/advantage-2-back.png' },
-  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'从品牌 VI 到全渠道视觉体系，建立统一且具有辨识度的品牌语言，并持续推动视觉资产的搭建、迭代与延展。', image:'/assets/advantage-3-front.png', back:'/assets/advantage-3-back.png' },
-  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'拥有电商全链路与运营经验，将设计与营销策略结合，以商业目标驱动视觉表达，让创意兼具传播力与转化价值。', image:'/assets/advantage-4-front.png', back:'/assets/advantage-4-back.png' },
-  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'将 AI 深度融入创意探索与设计工作流，拓展视觉表达边界，同时提升创意效率、方案丰富度与设计产能。', image:'/assets/advantage-5-front.png', back:'/assets/advantage-5-back.png' },
-  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'具备设计团队管理与项目统筹经验，通过流程标准化、资源协同与质量把控，持续提升团队整体设计效能。', image:'/assets/advantage-6-front.png', back:'/assets/advantage-6-back.png' },
+  { num:'01', title:'视觉表达', en:'VISUAL EXPRESSION', copy:'14年视觉设计积淀，覆盖 UI、Web、运营及多元视觉场景，以成熟的审美与设计语言，构建高品质视觉体验。', image:'/assets/advantage-1-front.webp', back:'/assets/advantage-1-back.webp' },
+  { num:'02', title:'产品思维', en:'PRODUCT THINKING', copy:'融合视觉、交互与产品思维，从用户需求与使用场景出发，兼顾体验、逻辑与多端落地，推动设计形成完整闭环。', image:'/assets/advantage-2-front.webp', back:'/assets/advantage-2-back.webp' },
+  { num:'03', title:'品牌塑造', en:'BRAND BUILDING', copy:'从品牌 VI 到全渠道视觉体系，建立统一且具有辨识度的品牌语言，并持续推动视觉资产的搭建、迭代与延展。', image:'/assets/advantage-3-front.webp', back:'/assets/advantage-3-back.webp' },
+  { num:'04', title:'商业洞察', en:'BUSINESS INSIGHT', copy:'拥有电商全链路与运营经验，将设计与营销策略结合，以商业目标驱动视觉表达，让创意兼具传播力与转化价值。', image:'/assets/advantage-4-front.webp', back:'/assets/advantage-4-back.webp' },
+  { num:'05', title:'智能创意', en:'AI-POWERED CREATIVITY', copy:'将 AI 深度融入创意探索与设计工作流，拓展视觉表达边界，同时提升创意效率、方案丰富度与设计产能。', image:'/assets/advantage-5-front.webp', back:'/assets/advantage-5-back.webp' },
+  { num:'06', title:'设计引领', en:'DESIGN LEADERSHIP', copy:'具备设计团队管理与项目统筹经验，通过流程标准化、资源协同与质量把控，持续提升团队整体设计效能。', image:'/assets/advantage-6-front.webp', back:'/assets/advantage-6-back.webp' },
 ];
 
 export default function Home() {
@@ -35,11 +35,11 @@ export default function Home() {
         <Grainient className="hero-grainient" color1="#ff4b1f" color2="#090208" color3="#ffb137" timeSpeed={0.86} warpStrength={1.4} warpFrequency={5.5} warpAmplitude={22} blendAngle={-28} grainAmount={0.08} contrast={1.32} saturation={1.08} />
         <div className="hero-grid" />
         <nav className="site-nav" aria-label="主要导航">
-          <a className="site-nav-brand" href="#home"><img src="/assets/zhaozijiang-logo.png" alt="赵兹江个人标志" /></a>
+          <a className="site-nav-brand" href="#home"><img src="/assets/zhaozijiang-logo.webp" alt="赵兹江个人标志" /></a>
           <div className="site-nav-links"><a href="#home">PORTFOLIO</a><a href="#experience">EXPERIENCE</a><a href="#strengths">CAPABILITIES</a><a href="#services">SERVICE</a><a href="#process">PROCESS</a><a href="#projects">PROJECTS</a><a href="#contact">CONTACT</a></div>
         </nav>
-        <div className="hero-title shell"><svg className="title-star" aria-hidden="true" viewBox="0 0 100 100"><path d="M50 0C54 34 66 46 100 50C66 54 54 66 50 100C46 66 34 54 0 50C34 46 46 34 50 0Z" /></svg><img src="/assets/hero-title-creative-portfolio.png" alt="Creative Portfolio" /></div>
-        <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.png" alt="伸手向镜头的黑白潮流人物形象" /></div></div>
+        <div className="hero-title shell"><svg className="title-star" aria-hidden="true" viewBox="0 0 100 100"><path d="M50 0C54 34 66 46 100 50C66 54 54 66 50 100C46 66 34 54 0 50C34 46 46 34 50 0Z" /></svg><img src="/assets/hero-title-creative-portfolio.webp" alt="Creative Portfolio" /></div>
+        <div className="hero-character"><div className="hero-character-stage"><img src="/assets/hero-character-v2.webp" alt="伸手向镜头的黑白潮流人物形象" /></div></div>
         <div className="hero-tag"><strong>ZhaoZijiang</strong><span>赵兹江 VISUAL / UI&nbsp;&nbsp;Portfolio</span></div>
         <a className="hero-scroll" href="#experience"><ArrowDown size={22}/> Scroll to view my work</a>
         <div className="hero-signature"><span className="signature-slash" aria-hidden="true">/</span><p>DESIGNING <em>BEYOND</em><br/>THE VISIBLE.</p></div>
@@ -70,7 +70,7 @@ export default function Home() {
 
       <section className="section strengths shell" id="strengths">
         <div className="section-head"><div className="module-heading-main"><div className="section-label">CAPABILITIES</div><h2 className="fluid-title-heading"><span>个人优势</span><FluidSectionTitle text="个人优势" /></h2></div><p>STRATEGY × CRAFT<br />× DELIVERY</p></div>
-        <div className="strength-grid">{strengths.map((item) => <article className="advantage-card" key={item.num} tabIndex={0}><div className="advantage-card-media"><img className="advantage-card-front" src={item.image} alt={`${item.title}，正面`} /><img className="advantage-card-back" src={item.back} alt={`${item.title}，背面`} /></div><div className="strength-copy"><h3>{item.title}</h3><small>{item.en}</small><i/><p>{item.copy}</p></div></article>)}</div>
+        <div className="strength-grid">{strengths.map((item) => <article className="advantage-card" key={item.num} tabIndex={0}><div className="advantage-card-media"><img className="advantage-card-front" src={item.image} alt={`${item.title}，正面`} loading="lazy" decoding="async" /><img className="advantage-card-back" src={item.back} alt={`${item.title}，背面`} loading="lazy" decoding="async" /></div><div className="strength-copy"><h3>{item.title}</h3><small>{item.en}</small><i/><p>{item.copy}</p></div></article>)}</div>
       </section>
 
       <BendingMarquee
@@ -97,7 +97,7 @@ export default function Home() {
       />
 
       <section className="services-showcase" id="services">
-        <img className="services-bg-image" src="/assets/services-background-final.png" alt="" />
+        <img className="services-bg-image" src="/assets/services-background-final.webp" alt="" loading="lazy" decoding="async" />
         <div className="services-inner shell">
           <div className="services-title">WHAT I DO</div>
           <div className="services-cards">
@@ -137,7 +137,7 @@ export default function Home() {
 
       <section className="section about shell" id="about">
         <div className="about-grid">
-          <WarpedCard className="portrait-wrap" imageSrc="/assets/profile-portrait-final.png" />
+          <WarpedCard className="portrait-wrap" imageSrc="/assets/profile-portrait-final.webp" />
           <div className="about-copy">
             <p className="kicker">HIGHLY EXPERIENCED SENIOR DESIGNER</p>
             <h2>在审美、秩序与商业目标之间，<br />创造真正<span>有效</span>的视觉体验。</h2>
@@ -153,7 +153,7 @@ export default function Home() {
           <article className={`project-card ${project.tone}`} key={project.index}>
             {project.href && <a className="project-card-hit" href={project.href} aria-label={`查看${project.title}完整项目`} />}
             <header className="project-card-head"><span>{project.index}</span><p>{project.subtitle}</p></header>
-            <div className="project-image"><img src={project.image || '/assets/hero-art.png'} alt={project.image ? `${project.title}项目封面` : ''} />{!project.image && <div className="mock-ui"><i/><i/><i/></div>}</div>
+            <div className="project-image"><img src={project.image || '/assets/hero-art.webp'} alt={project.image ? `${project.title}项目封面` : ''} loading="lazy" decoding="async" />{!project.image && <div className="mock-ui"><i/><i/><i/></div>}</div>
             <div className="project-info"><div><h3>{project.title}</h3><p className="project-copy">{project.copy}</p></div><button aria-label={`查看${project.title}`}>VIEW CASE <ArrowUpRight size={18}/></button></div>
           </article>
         ))}</div>
