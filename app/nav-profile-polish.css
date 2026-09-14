@@ -2976,3 +2976,16 @@
 .projects .project-card:focus-within .project-info button svg {
   stroke-width:3 !important;
 }
+
+/* Keep the new project 04 cover proportional and fully visible at rest. */
+.projects .project-card:nth-child(4) .project-image {
+  background:#000 !important;
+}
+
+.projects .project-card:nth-child(4) .project-image img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+  object-position:center center !important;
+  filter:none !important;
+}
