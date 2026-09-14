@@ -6,7 +6,7 @@ export const metadata = {
   description: '平安知鸟品牌 LOGO 系统升级完整项目展示。',
 };
 
-const projectImages = Array.from({ length: 24 }, (_, index) => index + 1);
+const projectImages = Array.from({ length: 28 }, (_, index) => index + 1);
 
 export default function ZhiniaoBrandLogoPage() {
   return (
