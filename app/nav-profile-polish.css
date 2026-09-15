@@ -2958,6 +2958,17 @@
   object-position:center !important;
 }
 
+/* Match project 02 artwork treatment and motion to project 03. */
+.projects .project-card:nth-child(2) .project-image {
+  background:#000 !important;
+}
+
+.projects .project-card:nth-child(2) .project-image img {
+  object-fit:contain !important;
+  object-position:center center !important;
+  filter:none !important;
+}
+
 /* Fine light outline for the four WHAT I DO glass cards. */
 .services-showcase .services-cards .service-card,
 .services-showcase .services-cards .service-card:nth-child(3) {
