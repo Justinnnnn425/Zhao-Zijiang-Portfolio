@@ -18,6 +18,12 @@ body:has(.icons-page) {
   perspective:1600px;
 }
 
+.icons-galleries {
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+}
+
 .icon-cell {
   position:relative;
   z-index:1;

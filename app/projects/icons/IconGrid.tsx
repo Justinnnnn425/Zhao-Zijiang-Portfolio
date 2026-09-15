@@ -16,15 +16,48 @@ const iconNumbers = [
 
 const columns = 6;
 
-export default function IconGrid() {
+type IconItem = {
+  key: string;
+  src: string;
+};
+
+const newIcons: IconItem[] = Array.from({ length: 24 }, (_, index) => ({
+  key: `new-${index + 1}`,
+  src: `/assets/new-icon-grid/new_${String(index + 1).padStart(2, '0')}.webp`,
+}));
+
+const originalIcons: IconItem[] = iconNumbers.map((number) => ({
+  key: `original-${number}`,
+  src: `/assets/icon-grid/6_1_${number}.webp`,
+}));
+
+function InteractiveIconGrid({ items, label }: { items: IconItem[]; label: string }) {
   const [hovered, setHovered] = useState<number | null>(null);
   const neighbours = useMemo(() => {
     if (hovered === null) return new Set<number>();
     const nearby = [hovered - columns, hovered + columns];
     if (hovered % columns !== 0) nearby.push(hovered - 1);
     if (hovered % columns !== columns - 1) nearby.push(hovered + 1);
-    return new Set(nearby.filter((index) => index >= 0 && index < iconNumbers.length));
-  }, [hovered]);
+    return new Set(nearby.filter((index) => index >= 0 && index < items.length));
+  }, [hovered, items.length]);
+
+  return (
+    <section className="icons-grid" aria-label={label}>
+      {items.map((item, index) => (
+        <div
+          className={`icon-cell${hovered === index ? ' is-active' : ''}${neighbours.has(index) ? ' is-neighbour' : ''}`}
+          key={item.key}
+          onPointerEnter={() => setHovered(index)}
+          onPointerLeave={() => setHovered(null)}
+        >
+          <img src={item.src} alt={`${label} ${index + 1}`} loading="lazy" decoding="async" draggable={false} />
+        </div>
+      ))}
+    </section>
+  );
+}
+
+export default function IconGrid() {
 
   return (
     <main className="icons-page">
@@ -33,18 +66,10 @@ export default function IconGrid() {
         <span>返回项目展示</span>
       </a>
 
-      <section className="icons-grid" aria-label="图标设计作品">
-        {iconNumbers.map((number, index) => (
-          <div
-            className={`icon-cell${hovered === index ? ' is-active' : ''}${neighbours.has(index) ? ' is-neighbour' : ''}`}
-            key={number}
-            onPointerEnter={() => setHovered(index)}
-            onPointerLeave={() => setHovered(null)}
-          >
-            <img src={`/assets/icon-grid/6_1_${number}.webp`} alt={`图标设计作品 ${index + 1}`} loading="lazy" decoding="async" draggable={false} />
-          </div>
-        ))}
-      </section>
+      <div className="icons-galleries">
+        <InteractiveIconGrid items={newIcons} label="新图标设计作品" />
+        <InteractiveIconGrid items={originalIcons} label="原图标设计作品" />
+      </div>
     </main>
   );
 }
