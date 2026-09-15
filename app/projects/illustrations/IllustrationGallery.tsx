@@ -43,7 +43,9 @@ export default function IllustrationGallery() {
               onClick={() => setActiveImage(src)}
               aria-label={`放大查看插画作品 ${index + 1}`}
             >
-              <img src={src} alt={`插画与手绘作品 ${index + 1}`} loading="lazy" decoding="async" />
+              <span className="illustration-image">
+                <img src={src} alt={`插画与手绘作品 ${index + 1}`} loading="lazy" decoding="async" />
+              </span>
             </button>
           );
         })}
