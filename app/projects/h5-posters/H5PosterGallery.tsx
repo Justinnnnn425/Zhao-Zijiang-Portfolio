@@ -47,7 +47,9 @@ export default function H5PosterGallery() {
                   onClick={() => setActiveImage(src)}
                   aria-label={`放大查看H5长图海报 ${index}`}
                 >
-                  <img src={src} alt={`H5长图海报作品 ${index}`} loading="lazy" decoding="async" />
+                  <span className="h5-poster-image">
+                    <img src={src} alt={`H5长图海报作品 ${index}`} loading="lazy" decoding="async" />
+                  </span>
                 </button>
               );
             })}

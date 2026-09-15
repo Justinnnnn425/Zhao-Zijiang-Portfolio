@@ -29,18 +29,35 @@ body:has(.h5-posters-page) {
   display:block;
   width:100%;
   height:auto;
-  padding:0;
+  padding:10px;
   overflow:hidden;
-  border:1px solid rgba(255,255,255,.28);
-  border-radius:30px;
-  background:#111;
+  border:1px solid #bababa;
+  border-radius:34px;
+  background:transparent;
   cursor:zoom-in;
 }
 
-.h5-poster-tile img {
+.h5-poster-image {
+  display:block;
+  width:100%;
+  overflow:hidden;
+  border:0;
+  border-radius:24px;
+}
+
+.h5-poster-image img {
   display:block;
   width:100%;
   height:auto;
+  border:0;
+  transform:scale(1);
+  transform-origin:center;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1);
+}
+
+.h5-poster-tile:hover .h5-poster-image img,
+.h5-poster-tile:focus-visible .h5-poster-image img {
+  transform:scale(1.05);
 }
 
 .h5-posters-back {
