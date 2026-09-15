@@ -2964,7 +2964,7 @@
 }
 
 .projects .project-card:nth-child(2) .project-image img {
-  object-fit:contain !important;
+  object-fit:cover !important;
   object-position:center center !important;
   filter:none !important;
 }
