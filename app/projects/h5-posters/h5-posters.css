@@ -1,0 +1,123 @@
+html:has(.h5-posters-page),
+body:has(.h5-posters-page) {
+  background:#1e1e1e;
+}
+
+.h5-posters-page {
+  min-height:100vh;
+  padding:92px 24px 100px;
+  background:#1e1e1e;
+}
+
+.h5-posters-grid {
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:50px;
+  width:1180px;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.h5-posters-column {
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+  min-width:0;
+}
+
+.h5-poster-tile {
+  display:block;
+  width:100%;
+  height:auto;
+  padding:0;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:30px;
+  background:#111;
+  cursor:zoom-in;
+}
+
+.h5-poster-tile img {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.h5-posters-back {
+  position:fixed;
+  z-index:30;
+  top:28px;
+  left:28px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-height:48px;
+  padding:0 18px;
+  border:1px solid rgba(255,255,255,.34);
+  border-radius:999px;
+  color:#fff;
+  background:linear-gradient(135deg,rgba(255,255,255,.13),rgba(255,255,255,.035));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.18),0 12px 34px rgba(0,0,0,.22);
+  -webkit-backdrop-filter:blur(22px) saturate(145%);
+  backdrop-filter:blur(22px) saturate(145%);
+  font:12px/1 Arial,sans-serif;
+  letter-spacing:.08em;
+  transition:color .25s ease,background .25s ease,border-color .25s ease;
+}
+
+.h5-posters-back:hover {
+  color:#050505;
+  background:#c4ff41;
+  border-color:#c4ff41;
+}
+
+.h5-posters-lightbox {
+  position:fixed;
+  z-index:100;
+  inset:0;
+  overflow:auto;
+  padding:70px max(24px,calc((100vw - 1180px) / 2));
+  background:rgba(0,0,0,.88);
+  cursor:zoom-out;
+  -webkit-backdrop-filter:blur(10px);
+  backdrop-filter:blur(10px);
+}
+
+.h5-posters-lightbox > img {
+  display:block;
+  width:min(1180px,calc(100vw - 48px));
+  height:auto;
+  margin:0 auto;
+  cursor:default;
+  box-shadow:0 30px 100px rgba(0,0,0,.6);
+}
+
+.h5-posters-close {
+  position:fixed;
+  z-index:2;
+  top:20px;
+  right:24px;
+  display:grid;
+  place-items:center;
+  width:48px;
+  height:48px;
+  padding:0;
+  border:1px solid rgba(255,255,255,.4);
+  border-radius:50%;
+  color:#fff;
+  background:rgba(20,20,20,.78);
+  cursor:pointer;
+}
+
+@media (max-width:900px) {
+  .h5-posters-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+
+@media (max-width:600px) {
+  .h5-posters-page { padding:78px 16px 70px; }
+  .h5-posters-grid { grid-template-columns:1fr; gap:50px; }
+  .h5-posters-column { gap:50px; }
+  .h5-posters-back { top:14px; left:14px; min-height:42px; padding:0 14px; }
+  .h5-posters-lightbox { padding:64px 16px 30px; }
+  .h5-posters-lightbox > img { width:100%; }
+}
