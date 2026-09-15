@@ -36,7 +36,7 @@ body:has(.ui-interface-page) {
 }
 
 .ui-interface-hero img,
-.ui-interface-tile img {
+.ui-interface-image img {
   display:block;
   width:100%;
   height:auto;
@@ -61,12 +61,30 @@ body:has(.ui-interface-page) {
 .ui-interface-tile {
   display:block;
   width:100%;
-  padding:0;
+  padding:10px;
   overflow:hidden;
-  border:1px solid rgba(255,255,255,.32);
-  border-radius:30px;
-  background:#111;
+  border:1px solid #bababa;
+  border-radius:34px;
+  background:transparent;
   cursor:zoom-in;
+}
+
+.ui-interface-image {
+  display:block;
+  width:100%;
+  overflow:hidden;
+  border-radius:30px;
+}
+
+.ui-interface-image img {
+  transform:scale(1);
+  transform-origin:center;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1);
+}
+
+.ui-interface-tile:hover .ui-interface-image img,
+.ui-interface-tile:focus-visible .ui-interface-image img {
+  transform:scale(1.05);
 }
 
 .ui-interface-back {

@@ -53,7 +53,9 @@ export default function UIInterfaceGallery() {
               const src = `/assets/ui-interface/lower/${file}`;
               return (
                 <button className="ui-interface-tile" type="button" key={file} onClick={() => setActiveImage(src)} aria-label={`放大查看UI界面设计 ${index}`}>
-                  <img src={src} alt={`UI界面设计作品 ${index}`} loading="lazy" decoding="async" />
+                  <span className="ui-interface-image">
+                    <img src={src} alt={`UI界面设计作品 ${index}`} loading="lazy" decoding="async" />
+                  </span>
                 </button>
               );
             })}
