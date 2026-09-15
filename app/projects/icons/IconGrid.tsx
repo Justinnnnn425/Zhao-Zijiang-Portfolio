@@ -14,8 +14,6 @@ const iconNumbers = [
   47, 48, 50, 51, 52, 53,
 ];
 
-const columns = 6;
-
 type IconItem = {
   key: string;
   src: string;
@@ -31,7 +29,12 @@ const originalIcons: IconItem[] = iconNumbers.map((number) => ({
   src: `/assets/icon-grid/6_1_${number}.webp`,
 }));
 
-function InteractiveIconGrid({ items, label }: { items: IconItem[]; label: string }) {
+const outlineIcons: IconItem[] = Array.from({ length: 35 }, (_, index) => ({
+  key: `outline-${index + 1}`,
+  src: `/assets/outline-icon-grid/outline_${String(index + 1).padStart(2, '0')}.webp`,
+}));
+
+function InteractiveIconGrid({ items, label, columns = 6 }: { items: IconItem[]; label: string; columns?: number }) {
   const [hovered, setHovered] = useState<number | null>(null);
   const neighbours = useMemo(() => {
     if (hovered === null) return new Set<number>();
@@ -42,7 +45,7 @@ function InteractiveIconGrid({ items, label }: { items: IconItem[]; label: strin
   }, [hovered, items.length]);
 
   return (
-    <section className="icons-grid" aria-label={label}>
+    <section className={`icons-grid${columns === 8 ? ' icons-grid--8' : ''}`} aria-label={label}>
       {items.map((item, index) => (
         <div
           className={`icon-cell${hovered === index ? ' is-active' : ''}${neighbours.has(index) ? ' is-neighbour' : ''}`}
@@ -69,6 +72,7 @@ export default function IconGrid() {
       <div className="icons-galleries">
         <InteractiveIconGrid items={newIcons} label="新图标设计作品" />
         <InteractiveIconGrid items={originalIcons} label="原图标设计作品" />
+        <InteractiveIconGrid items={outlineIcons} label="线性图标设计作品" columns={8} />
       </div>
     </main>
   );

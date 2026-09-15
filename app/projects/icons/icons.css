@@ -18,6 +18,10 @@ body:has(.icons-page) {
   perspective:1600px;
 }
 
+.icons-grid--8 {
+  grid-template-columns:repeat(8,minmax(0,1fr));
+}
+
 .icons-galleries {
   display:flex;
   flex-direction:column;
