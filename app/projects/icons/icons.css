@@ -25,7 +25,7 @@ body:has(.icons-page) {
 .icons-galleries {
   display:flex;
   flex-direction:column;
-  gap:50px;
+  gap:100px;
 }
 
 .icon-cell {

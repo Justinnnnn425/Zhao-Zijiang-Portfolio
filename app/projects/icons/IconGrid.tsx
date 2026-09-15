@@ -19,6 +19,16 @@ type IconItem = {
   src: string;
 };
 
+const topGroupOne: IconItem[] = Array.from({ length: 6 }, (_, index) => ({
+  key: `top-group-1-${index + 1}`,
+  src: `/assets/top-icon-group-1/group1_${String(index + 1).padStart(2, '0')}.webp`,
+}));
+
+const topGroupTwo: IconItem[] = Array.from({ length: 12 }, (_, index) => ({
+  key: `top-group-2-${index + 1}`,
+  src: `/assets/top-icon-group-2/group2_${String(index + 1).padStart(2, '0')}.webp`,
+}));
+
 const newIcons: IconItem[] = Array.from({ length: 24 }, (_, index) => ({
   key: `new-${index + 1}`,
   src: `/assets/new-icon-grid/new_${String(index + 1).padStart(2, '0')}.webp`,
@@ -42,7 +52,7 @@ function InteractiveIconGrid({ items, label, columns = 6 }: { items: IconItem[];
     if (hovered % columns !== 0) nearby.push(hovered - 1);
     if (hovered % columns !== columns - 1) nearby.push(hovered + 1);
     return new Set(nearby.filter((index) => index >= 0 && index < items.length));
-  }, [hovered, items.length]);
+  }, [hovered, items.length, columns]);
 
   return (
     <section className={`icons-grid${columns === 8 ? ' icons-grid--8' : ''}`} aria-label={label}>
@@ -70,6 +80,8 @@ export default function IconGrid() {
       </a>
 
       <div className="icons-galleries">
+        <InteractiveIconGrid items={topGroupOne} label="彩色图标设计作品第一组" />
+        <InteractiveIconGrid items={topGroupTwo} label="彩色图标设计作品第二组" />
         <InteractiveIconGrid items={newIcons} label="新图标设计作品" />
         <InteractiveIconGrid items={originalIcons} label="原图标设计作品" />
         <InteractiveIconGrid items={outlineIcons} label="线性图标设计作品" columns={8} />
