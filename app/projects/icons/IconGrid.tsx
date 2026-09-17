@@ -44,6 +44,19 @@ const outlineIcons: IconItem[] = Array.from({ length: 35 }, (_, index) => ({
   src: `/assets/outline-icon-grid/outline_${String(index + 1).padStart(2, '0')}.webp`,
 }));
 
+const folderGroups = [
+  { folder: '02', count: 21, label: '图标设计作品 02' },
+  { folder: '03', count: 8, label: '图标设计作品 03' },
+  { folder: '04', count: 8, label: '图标设计作品 04' },
+  { folder: '05', count: 8, label: '图标设计作品 05' },
+].map(({ folder, count, label }) => ({
+  label,
+  items: Array.from({ length: count }, (_, index) => ({
+    key: `folder-${folder}-${index + 1}`,
+    src: `/assets/icon-folder-groups/${folder}/${String(index + 1).padStart(2, '0')}.webp`,
+  })),
+}));
+
 function InteractiveIconGrid({ items, label, columns = 6 }: { items: IconItem[]; label: string; columns?: number }) {
   const [hovered, setHovered] = useState<number | null>(null);
   const neighbours = useMemo(() => {
@@ -85,6 +98,9 @@ export default function IconGrid() {
         <InteractiveIconGrid items={newIcons} label="新图标设计作品" />
         <InteractiveIconGrid items={originalIcons} label="原图标设计作品" />
         <InteractiveIconGrid items={outlineIcons} label="线性图标设计作品" columns={8} />
+        {folderGroups.map((group) => (
+          <InteractiveIconGrid key={group.label} items={group.items} label={group.label} columns={8} />
+        ))}
       </div>
     </main>
   );

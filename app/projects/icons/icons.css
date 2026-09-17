@@ -54,7 +54,9 @@ body:has(.icons-page) {
   height:48%;
   object-fit:contain;
   object-position:center;
-  opacity:.72;
+  opacity:1;
+  filter:none;
+  mix-blend-mode:normal;
   user-select:none;
   transform:translate(-50%,-50%);
   transform-origin:center;
