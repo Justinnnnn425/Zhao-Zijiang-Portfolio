@@ -9,6 +9,30 @@ body:has(.zhiniao-ui-page) {
   background:#1e1e1e;
 }
 
+.zhiniao-ui-intro {
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+  width:1200px;
+  max-width:100%;
+  margin:0 auto 50px;
+}
+
+.zhiniao-ui-intro-tile {
+  display:block;
+  width:100%;
+  padding:0;
+  border:0;
+  background:transparent;
+  cursor:zoom-in;
+}
+
+.zhiniao-ui-intro-tile img {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
 .zhiniao-ui-grid {
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));

@@ -4,6 +4,7 @@ import { ArrowLeft, X } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 
 const uiFiles = Array.from({ length: 30 }, (_, index) => `${String(index + 1).padStart(2, '0')}.webp`);
+const introFiles = Array.from({ length: 9 }, (_, index) => `${String(index + 1).padStart(2, '0')}.webp`);
 
 export default function ZhiniaoUIGallery() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -32,6 +33,23 @@ export default function ZhiniaoUIGallery() {
         <ArrowLeft size={20} />
         <span>返回项目展示</span>
       </a>
+
+      <section className="zhiniao-ui-intro" aria-label="平安知鸟UI设计规范">
+        {introFiles.map((file, index) => {
+          const src = `/assets/zhiniao-ui-intro/${file}`;
+          return (
+            <button
+              className="zhiniao-ui-intro-tile"
+              type="button"
+              key={file}
+              onClick={() => setActiveImage(src)}
+              aria-label={`放大查看平安知鸟UI设计规范 ${index + 1}`}
+            >
+              <img src={src} alt={`平安知鸟UI设计规范 ${index + 1}`} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" />
+            </button>
+          );
+        })}
+      </section>
 
       <section className="zhiniao-ui-grid" aria-label="平安知鸟UI设计作品">
         {columns.map((files, columnIndex) => (
