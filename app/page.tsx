@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, ArrowUpRight, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
+import { ArrowDown, ArrowUp, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import Grainient from '@/components/Grainient';
 import SpotlightCard from '@/components/SpotlightCard';
 import PortfolioMotion from '@/components/PortfolioMotion';
@@ -172,7 +172,7 @@ export default function Home() {
               <a href="mailto:215292285@qq.com"><i><Mail size={24}/></i><span>215292285@qq.com</span></a>
               <a href="tel:13620215425"><i><Phone size={24}/></i><span>136 2021 5425</span></a>
               <div><i><MapPin size={24}/></i><span>ShenZhen</span></div>
-              <div className="contact-wechat"><i><MessageCircle size={24}/></i><div className="contact-wechat-content"><span>WECHAT</span><img src="/assets/wechat-qr.png" alt="微信二维码" /></div></div>
+              <div className="contact-wechat"><span className="contact-wechat-button">WECHAT</span><img src="/assets/wechat-qr.png" alt="微信二维码" /></div>
             </div>
           </div>
         </div>

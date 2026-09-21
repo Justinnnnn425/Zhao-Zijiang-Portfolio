@@ -3017,24 +3017,30 @@
 }
 
 .contact-details .contact-wechat {
-  align-items:flex-start;
+  display:flex;
+  align-items:stretch;
+  gap:20px !important;
   margin-top:8px;
 }
 
-.contact-wechat-content {
-  display:flex;
-  flex-direction:column;
-  align-items:flex-start;
-  gap:12px;
-}
-
-.contact-wechat-content > span {
+.contact-wechat-button {
+  display:grid;
+  place-items:center;
+  flex:0 0 50px;
+  width:50px;
+  height:140px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:25px;
   color:#e9e9e5;
-  font-size:clamp(16px,1.35vw,24px);
+  background:rgba(255,255,255,.08);
+  box-shadow:inset 0 1px rgba(255,255,255,.14);
+  font-size:15px;
   line-height:1;
+  letter-spacing:.04em;
+  writing-mode:vertical-rl;
 }
 
-.contact-wechat-content img {
+.contact-wechat img {
   display:block;
   width:140px;
   height:140px;
