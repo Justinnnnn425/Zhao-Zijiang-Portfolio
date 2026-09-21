@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUp, ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
+import { ArrowDown, ArrowUp, ArrowUpRight, Mail, MapPin, MessageCircle, Phone } from 'lucide-react';
 import Grainient from '@/components/Grainient';
 import SpotlightCard from '@/components/SpotlightCard';
 import PortfolioMotion from '@/components/PortfolioMotion';
@@ -16,6 +16,7 @@ const projects = [
   { index: '06', title: '图标设计', subtitle: 'ICON design', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-06-icons.webp', href: '/projects/icons' },
   { index: '07', title: '海报 / BANNER设计', subtitle: 'Poster & Banner design', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-07-poster-banner.webp', href: '/projects/poster-banner' },
   { index: '08', title: '插画 & 手绘', subtitle: 'Illustration & Drawings', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-08-illustration.webp', href: '/projects/illustrations' },
+  { index: '09', title: '其他物料设计汇总', subtitle: 'OTHER DESIGN MATERIALS SHOWCASE', tone: 'lime', copy: '', image: '' },
 ];
 
 const strengths = [
@@ -153,7 +154,9 @@ export default function Home() {
           <article className={`project-card ${project.tone}`} key={project.index}>
             {project.href && <a className="project-card-hit" href={project.href} aria-label={`查看${project.title}完整项目`} />}
             <header className="project-card-head"><span>{project.index}</span><p>{project.subtitle}</p></header>
-            <div className="project-image"><img src={project.image || '/assets/hero-art.webp'} alt={project.image ? `${project.title}项目封面` : ''} loading="lazy" decoding="async" />{!project.image && <div className="mock-ui"><i/><i/><i/></div>}</div>
+            <div className={`project-image${project.image ? '' : ' project-image-placeholder'}`}>
+              {project.image && <img src={project.image} alt={`${project.title}项目封面`} loading="lazy" decoding="async" />}
+            </div>
             <div className="project-info"><div><h3>{project.title}</h3><p className="project-copy">{project.copy}</p></div><button aria-label={`查看${project.title}`}>VIEW CASE <ArrowUpRight size={18}/></button></div>
           </article>
         ))}</div>
@@ -169,6 +172,7 @@ export default function Home() {
               <a href="mailto:215292285@qq.com"><i><Mail size={24}/></i><span>215292285@qq.com</span></a>
               <a href="tel:13620215425"><i><Phone size={24}/></i><span>136 2021 5425</span></a>
               <div><i><MapPin size={24}/></i><span>ShenZhen</span></div>
+              <div className="contact-wechat"><i><MessageCircle size={24}/></i><div className="contact-wechat-content"><span>WECHAT</span><img src="/assets/wechat-qr.png" alt="微信二维码" /></div></div>
             </div>
           </div>
         </div>
