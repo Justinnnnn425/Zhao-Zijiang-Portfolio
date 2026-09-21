@@ -16,7 +16,7 @@ const projects = [
   { index: '06', title: '图标设计', subtitle: 'ICON design', tone: 'silver', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-06-icons.webp', href: '/projects/icons' },
   { index: '07', title: '海报 / BANNER设计', subtitle: 'Poster & Banner design', tone: 'lime', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-07-poster-banner.webp', href: '/projects/poster-banner' },
   { index: '08', title: '插画 & 手绘', subtitle: 'Illustration & Drawings', tone: 'violet', copy: '项目介绍占位文字，后续可替换为正式的项目背景、设计策略与成果说明。', image: '/assets/project-08-illustration.webp', href: '/projects/illustrations' },
-  { index: '09', title: '其他物料设计汇总', subtitle: 'OTHER DESIGN MATERIALS SHOWCASE', tone: 'lime', copy: '', image: '' },
+  { index: '09', title: '其他物料设计汇总', subtitle: 'OTHER DESIGN MATERIALS COLLECTION', tone: 'lime', copy: '', image: '/assets/project-09-materials.webp' },
 ];
 
 const strengths = [

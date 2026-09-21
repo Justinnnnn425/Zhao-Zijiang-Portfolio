@@ -2933,7 +2933,14 @@
   flex:1 1 auto !important;
   height:auto !important;
   aspect-ratio:auto !important;
-  background:#00e53f !important;
+  background:#000 !important;
+}
+.projects .project-card:nth-child(9) .project-image img {
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  filter:none !important;
 }
 .projects .project-card:nth-child(9) .project-info {
   padding-bottom:18px;
