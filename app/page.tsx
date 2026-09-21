@@ -167,7 +167,7 @@ export default function Home() {
           <header className="section-head contact-heading"><div className="module-heading-main"><div className="section-label">CONTACT ME</div><h2 className="fluid-title-heading"><span>联系我</span><FluidSectionTitle text="联系我" /></h2></div></header>
           <p className="contact-intro">I’m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Just reach out!</p>
           <div className="contact-build">
-            <h3><span>LET’S BUILD</span><strong>SOMETHING<br/><em>AMAZING！</em></strong></h3>
+            <h3><span>LET’S BUILD</span><strong>SOMETHING<br/><em>AMAZING！</em></strong><img className="contact-material-art" src="/assets/wechat-qr.png" alt="微信二维码装饰图" /></h3>
             <div className="contact-details">
               <a href="mailto:215292285@qq.com"><i><Mail size={24}/></i><span>215292285@qq.com</span></a>
               <a href="tel:13620215425"><i><Phone size={24}/></i><span>136 2021 5425</span></a>

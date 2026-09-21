@@ -2942,6 +2942,10 @@
   object-position:center center !important;
   filter:none !important;
 }
+.projects .project-card:nth-child(9):hover .project-image img,
+.projects .project-card:nth-child(9):focus-within .project-image img {
+  transform:scale(1.05) !important;
+}
 .projects .project-card:nth-child(9) .project-info {
   padding-bottom:18px;
 }
@@ -3053,6 +3057,31 @@
   height:140px;
   border-radius:20px;
   object-fit:cover;
+}
+
+.contact-build h3 {
+  position:relative;
+}
+
+.contact-material-art {
+  position:absolute;
+  right:clamp(6px,1.2vw,24px);
+  bottom:0;
+  display:block;
+  width:clamp(120px,9vw,150px);
+  height:clamp(120px,9vw,150px);
+  border-radius:20px;
+  object-fit:cover;
+}
+
+@media (max-width:800px) {
+  .contact-material-art {
+    position:static;
+    width:120px;
+    height:120px;
+    margin-top:24px;
+    align-self:flex-end;
+  }
 }
 
 @media (max-width:900px) {
