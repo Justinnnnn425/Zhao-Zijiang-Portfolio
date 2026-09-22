@@ -6,6 +6,7 @@ import BendingMarquee from '@/components/BendingMarquee';
 import WarpedCard from '@/components/WarpedCard';
 import FluidSectionTitle from '@/components/FluidSectionTitle';
 import GlitterWrap from '@/components/originkit/ui/glitterwrap-custom-style';
+import Testimonials from '@/components/Testimonials';
 
 const projects = [
   { index: '01', title: '平安知鸟IP形象优化设计', subtitle: 'PINGAN ZHINIAO IP DESIGN', tone: 'blue', copy: '重塑平安知鸟IP形象，从主形象到周边运营物料应用的完整视觉系统。', image: '/assets/project-01-zhiniao.webp', href: '/projects/zhiniao-ip' },
@@ -161,6 +162,8 @@ export default function Home() {
           </article>
         ))}</div>
       </section>
+
+      <Testimonials />
 
       <footer className="contact-section" id="contact">
         <div className="contact-inner shell">
