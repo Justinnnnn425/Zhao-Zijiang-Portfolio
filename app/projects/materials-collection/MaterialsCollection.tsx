@@ -28,6 +28,7 @@ export default function MaterialsCollection() {
         <section className="materials-pair materials-videos" aria-label="加油宝动态设计">
           <video autoPlay muted loop playsInline preload="metadata" aria-label="加油宝动态设计一">
             <source src="/assets/materials-collection/05.mp4" type="video/mp4" />
+            <source src="/assets/materials-collection/05.mov" type="video/quicktime" />
           </video>
           <video autoPlay muted loop playsInline preload="metadata" aria-label="加油宝动态设计二">
             <source src="/assets/materials-collection/06.mp4" type="video/mp4" />
