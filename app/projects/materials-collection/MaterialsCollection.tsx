@@ -25,15 +25,6 @@ export default function MaterialsCollection() {
           <img src="/assets/materials-collection/04.webp" alt="加油宝标志方案二" loading="lazy" decoding="async" />
         </section>
 
-        <section className="materials-pair materials-videos" aria-label="加油宝动态设计">
-          <video autoPlay muted loop playsInline preload="metadata" aria-label="加油宝动态设计一">
-            <source src="/assets/materials-collection/05.mp4" type="video/mp4" />
-          </video>
-          <video autoPlay muted loop playsInline preload="metadata" aria-label="加油宝动态设计二">
-            <source src="/assets/materials-collection/06.mp4" type="video/mp4" />
-          </video>
-        </section>
-
         <img className="materials-wide" src="/assets/materials-collection/07.webp" alt="平安知鸟行业培训解决方案" loading="lazy" decoding="async" />
         <img className="materials-wide" src="/assets/materials-collection/08.webp" alt="平安知鸟品牌宣传册" loading="lazy" decoding="async" />
       </div>
