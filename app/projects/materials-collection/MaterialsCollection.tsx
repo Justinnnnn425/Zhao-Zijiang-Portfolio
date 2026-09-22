@@ -13,6 +13,7 @@ export default function MaterialsCollection() {
 
       <div className="materials-content">
         <section className="materials-slice-stack" aria-label="加油宝网页设计">
+          <img src="/assets/materials-collection/00.png" alt="加油宝网页设计展示图" decoding="async" />
           {groupOne.map((src, index) => <img src={src} alt={`加油宝网页设计 ${index + 1}`} key={src} decoding="async" />)}
         </section>
 
