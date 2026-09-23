@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from 'react';
 
 const upperFiles = Array.from({ length: 11 }, (_, index) => `${index + 1}.webp`);
 const lowerFiles = Array.from({ length: 27 }, (_, index) => `${index + 1}.webp`);
+const introFiles = ['0-1.jpg', '0-2.jpg', '0-3.jpg'];
 
 export default function UIInterfaceGallery() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
@@ -33,6 +34,17 @@ export default function UIInterfaceGallery() {
         <ArrowLeft size={20} />
         <span>返回项目展示</span>
       </a>
+
+      <section className="ui-interface-intro" aria-label="加油宝UI界面与设计规范概览">
+        {introFiles.map((file, index) => {
+          const src = `/assets/ui-interface/intro/${file}`;
+          return (
+            <button className="ui-interface-hero" type="button" key={file} onClick={() => setActiveImage(src)} aria-label={`放大查看加油宝UI概览 ${index + 1}`}>
+              <span><img src={src} alt={`加油宝UI概览 ${index + 1}`} loading={index === 0 ? 'eager' : 'lazy'} decoding="async" /></span>
+            </button>
+          );
+        })}
+      </section>
 
       <section className="ui-interface-upper" aria-label="UI设计规范作品">
         {upperFiles.map((file, index) => {

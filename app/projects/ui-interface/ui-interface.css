@@ -9,6 +9,7 @@ body:has(.ui-interface-page) {
   background:#1e1e1e;
 }
 
+.ui-interface-intro,
 .ui-interface-upper {
   display:flex;
   flex-direction:column;
@@ -21,10 +22,10 @@ body:has(.ui-interface-page) {
 .ui-interface-hero {
   display:block;
   width:100%;
-  padding:10px;
+  padding:0;
   overflow:hidden;
-  border:1px solid #bababa;
-  border-radius:34px;
+  border:0;
+  border-radius:0;
   background:transparent;
   cursor:zoom-in;
 }
@@ -32,8 +33,10 @@ body:has(.ui-interface-page) {
 .ui-interface-hero > span {
   display:block;
   overflow:hidden;
-  border-radius:30px;
+  border-radius:0;
 }
+
+.ui-interface-upper { margin-top:50px; }
 
 .ui-interface-hero img,
 .ui-interface-image img {
@@ -61,10 +64,10 @@ body:has(.ui-interface-page) {
 .ui-interface-tile {
   display:block;
   width:100%;
-  padding:10px;
+  padding:0;
   overflow:hidden;
-  border:1px solid #bababa;
-  border-radius:34px;
+  border:0;
+  border-radius:0;
   background:transparent;
   cursor:zoom-in;
 }
@@ -73,7 +76,7 @@ body:has(.ui-interface-page) {
   display:block;
   width:100%;
   overflow:hidden;
-  border-radius:30px;
+  border-radius:0;
 }
 
 .ui-interface-image img {
