@@ -4,7 +4,9 @@ import { ArrowLeft, X } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 
 const uiFiles = Array.from({ length: 30 }, (_, index) => `${String(index + 1).padStart(2, '0')}.webp`);
-const introFiles = Array.from({ length: 9 }, (_, index) => `${String(index + 1).padStart(2, '0')}.webp`);
+const introFiles = Array.from({ length: 9 }, (_, index) =>
+  index === 1 ? '02.png' : `${String(index + 1).padStart(2, '0')}.webp`,
+);
 
 export default function ZhiniaoUIGallery() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
