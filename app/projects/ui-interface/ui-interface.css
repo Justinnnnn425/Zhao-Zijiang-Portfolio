@@ -9,8 +9,7 @@ body:has(.ui-interface-page) {
   background:#1e1e1e;
 }
 
-.ui-interface-intro,
-.ui-interface-upper {
+.ui-interface-intro {
   display:flex;
   flex-direction:column;
   gap:50px;
@@ -35,8 +34,6 @@ body:has(.ui-interface-page) {
   overflow:hidden;
   border-radius:0;
 }
-
-.ui-interface-upper { margin-top:50px; }
 
 .ui-interface-hero img,
 .ui-interface-image img {
