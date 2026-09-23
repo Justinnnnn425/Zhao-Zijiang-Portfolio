@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
 
 const testimonials = [
@@ -28,6 +28,14 @@ const testimonials = [
 
 export default function Testimonials() {
   const [active, setActive] = useState(1);
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setActive((current) => (current + 1) % testimonials.length);
+    }, 3000);
+
+    return () => window.clearInterval(timer);
+  }, []);
 
   return (
     <section className="testimonials-section" aria-labelledby="testimonials-title">
