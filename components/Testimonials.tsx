@@ -7,21 +7,25 @@ const testimonials = [
   {
     name: '陈道高',
     title: 'CEO，深圳一尺万丈科技',
+    avatar: '/assets/testimonials/chen-daogao.jpg',
     copy: '合作过好几次了，合作非常愉快，沟通效率很高，大部分时候都能第一时间知道我想要什么，做事很麻利，FSMS系统后台的整体设计和后续支持都非常符合我的预期，总之很满意，期待下次合作！',
   },
   {
     name: '黄远杰',
     title: '高级视觉设计师，平安知鸟',
+    avatar: '/assets/testimonials/huang-yuanjie.jpg',
     copy: '设计审美在线，需求分配也非常合理，知道小伙伴们的擅长点和想进步的方向，会适当加一些挑战让小伙伴们持续进化。需求时间把控也很稳，一般都会提前对接需求方，好给小伙伴们预留更多的准备时间，团队氛围也很融洽，团队输出效率高，能一起共事真的棒棒的！',
   },
   {
     name: '宋敬月',
     title: '高级品宣，平安知鸟',
+    avatar: '/assets/testimonials/song-jingyue.jpg',
     copy: '每次有紧急需求都能帮我快速搞定！相当靠谱！我的很多任务都是直属领导临时想起来告诉我的，我第一时间找大江对接，不管是前期风格尝试还是草稿出图，设计需求从没有耽误过！相当稳！',
   },
   {
     name: '蒋卫磊',
     title: '营销总监，深圳荣乔实业',
+    avatar: '/assets/testimonials/jiang-weilei.jpg',
     copy: '老朋友了，很多设计项目都帮我圆满搞定！深圳礼品展多次展会的相关宣传物料都是阿江帮我做的设计，都挺满意的，合作沟通也挺好的，能够很快get我想要的点，真的省心省力，期待下次合作！',
   },
 ];
@@ -54,7 +58,7 @@ export default function Testimonials() {
                 <span>5.0</span>
               </div>
               <p className="testimonial-copy">{item.copy}</p>
-              <div className="testimonial-card-bottom"><div className="testimonial-person"><span className="testimonial-avatar" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><strong>{item.name}</strong><small>{item.title}</small></div></div><span className="testimonial-quote" aria-hidden="true">“</span></div>
+              <div className="testimonial-card-bottom"><div className="testimonial-person"><img className="testimonial-avatar" src={item.avatar} alt="" /><div><strong>{item.name}</strong><small>{item.title}</small></div></div><span className="testimonial-quote" aria-hidden="true">“</span></div>
             </article>
           );
         })}

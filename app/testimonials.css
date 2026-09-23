@@ -22,11 +22,11 @@
 .testimonial-copy { max-width:830px; margin:24px 0 18px; color:#e3e3e3; font-size:clamp(17px,1.2vw,21px); line-height:2; }
 .testimonial-card-bottom { display:flex; justify-content:space-between; align-items:end; gap:20px; margin-top:auto; }
 .testimonial-person { position:relative; z-index:2; display:flex; align-items:center; gap:14px; }
-.testimonial-avatar { display:grid; place-items:center; width:46px; height:46px; flex:none; border-radius:50%; background:#555; color:#fff; font:14px/1 monospace; }
+.testimonial-avatar { display:block; width:46px; height:46px; flex:none; border-radius:50%; object-fit:cover; background:#555; }
 .testimonial-person strong,.testimonial-person small { display:block; }
 .testimonial-person strong { font-size:20px; font-weight:600; }
 .testimonial-person small { margin-top:4px; color:#bdbdbd; font-size:15px; }
-.testimonial-quote { position:absolute; right:32px; bottom:24px; width:72px; height:62px; color:#595959; font-family:Georgia,serif; font-size:110px; line-height:1; transform:scale(5); transform-origin:right bottom; pointer-events:none; }
+.testimonial-quote { position:absolute; right:32px; bottom:18px; color:#595959; font-family:Georgia,serif; font-size:220px; line-height:.58; pointer-events:none; }
 .testimonials-controls { display:flex; justify-content:center; gap:14px; margin-top:10px; }
 .testimonials-controls button { display:grid; place-items:center; width:48px; height:48px; border:0; border-radius:50%; background:#484848; color:#fff; cursor:pointer; transition:background .25s ease,transform .25s ease; }
 .testimonials-controls button:last-child,.testimonials-controls button:hover { background:var(--testimonial-orange); }
@@ -42,7 +42,7 @@
   .testimonial-card--next { transform:translateX(calc(50% + 14px)); }
   .testimonial-copy { font-size:16px; }
   .testimonial-stars span { font-size:18px; }
-  .testimonial-quote { right:24px; bottom:26px; transform:scale(3.4); }
+  .testimonial-quote { right:24px; bottom:20px; font-size:160px; }
   .testimonials-controls { margin-top:12px; }
 }
 @media (prefers-reduced-motion:reduce) { .testimonial-card,.testimonials-controls button { transition:none; } }
