@@ -4,7 +4,7 @@ import { ArrowLeft, X } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 
 const lowerFiles = Array.from({ length: 27 }, (_, index) => `${index + 1}.webp`);
-const introFiles = ['0-1.jpg', '0-2.jpg', '0-3.jpg'];
+const introFiles = ['0-1.jpg', '0-2.jpg', '0-3.jpg', '0-4.jpg'];
 
 export default function UIInterfaceGallery() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
